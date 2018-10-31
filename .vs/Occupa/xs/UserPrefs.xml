@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{5FBBA10E-B6F7-40FC-B70E-74864E6B8FB0}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Occupa/Views/AboutPage.xaml">
+    <Files>
+      <File FileName="Occupa/Views/MainPage.xaml.cs" Line="9" Column="18" />
+      <File FileName="Occupa/Views/MainPage.xaml" Line="13" Column="26" />
+      <File FileName="Occupa/Views/AboutPage.xaml" Line="68" Column="15" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Occupa.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.25603087-0D8A-4A02-A14E-DBD65DEF3554" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Occupa.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" FirstBuild="True" />
+</Properties>

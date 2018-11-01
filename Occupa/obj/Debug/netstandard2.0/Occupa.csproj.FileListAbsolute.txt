@@ -3,11 +3,8 @@
 /Users/kristianbangsoe/Projects/Occupa/Occupa/bin/Debug/netstandard2.0/Occupa.pdb
 /Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Occupa.csprojAssemblyReference.cache
 /Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/App.xaml.g.cs
-/Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Views/AboutPage.xaml.g.cs
-/Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Views/ItemDetailPage.xaml.g.cs
-/Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Views/ItemsPage.xaml.g.cs
-/Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Views/MainPage.xaml.g.cs
-/Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Views/NewItemPage.xaml.g.cs
+/Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Dashboard.xaml.g.cs
+/Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
 /Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Occupa.csproj.CoreCompileInputs.cache
 /Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Occupa.AssemblyInfoInputs.cache
 /Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Occupa.AssemblyInfo.cs

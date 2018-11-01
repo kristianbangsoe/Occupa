@@ -8,7 +8,7 @@ THe project seeks to help the occupational therapist students when they are doin
 
 ## Getting Started
 
-* Clone or download the rpository on your local machine.
+* Clone or download the repository on your local machine.
 
 ### On Mac
 

@@ -1,10 +1,10 @@
 # Occupa
 
-This is an app for danish occupational therapist students. The soltion is made in Xamarin Forms for Android and iOS tablets. 
+This is an app for danish occupational therapist students. The solution is made in Xamarin Forms for Android and iOS tablets. 
 
 ## Description
 
-THe project seeks to help the occupational therapist students when they are doing physical excercises during class. We aim to collect all class excercises in one solution with the possibility to take notes and reflect as they do their excercises. Furthermore we try to give the students detailed videos and descriptions to help them understand the specific excercise. 
+The project seeks to help the occupational therapist students when they are doing physical excercises during class. We aim to collect all class excercises in one solution with the possibility to take notes and reflect as they do their excercises. Furthermore we try to give the students detailed videos and descriptions to help them understand the specific excercise. 
 
 ## Getting Started
 

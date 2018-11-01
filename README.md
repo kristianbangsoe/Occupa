@@ -28,7 +28,7 @@ THe project seeks to help the occupational therapist students when they are doin
 
 ## Authors
 
-Kristian Bangsø, Søren Højby, Michael Larsen & Stefan Turcano
+Kristian Bangsø, Søren Højby, Michael Larsen & Stefan Turcanu
 
 ## Version History
 

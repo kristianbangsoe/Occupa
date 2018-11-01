@@ -11,3 +11,4 @@
 /Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Occupa.dll
 /Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Occupa.pdb
+/Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Styles/master.css.g.cs

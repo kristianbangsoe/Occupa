@@ -69,3 +69,7 @@
 /Users/kristianbangsoe/Projects/Occupa/Occupa.iOS/obj/iPhoneSimulator/Debug/device-builds/ipad6.4-12.0/optimized/icons/icon_6.png
 /Users/kristianbangsoe/Projects/Occupa/Occupa.iOS/obj/iPhoneSimulator/Debug/device-builds/ipad6.4-12.0/optimized/icons/icon_7.png
 /Users/kristianbangsoe/Projects/Occupa/Occupa.iOS/obj/iPhoneSimulator/Debug/device-builds/ipad6.4-12.0/optimized/icons/icon_8.png
+/Users/kristianbangsoe/Projects/Occupa/Occupa.iOS/bin/iPhoneSimulator/Debug/System.Net.Http.Extensions.dll
+/Users/kristianbangsoe/Projects/Occupa/Occupa.iOS/bin/iPhoneSimulator/Debug/System.Net.Http.Primitives.dll
+/Users/kristianbangsoe/Projects/Occupa/Occupa.iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/kristianbangsoe/Projects/Occupa/Occupa.iOS/obj/iPhoneSimulator/Debug/device-builds/ipad6.4-12.0/optimized/hook.png

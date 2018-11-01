@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Occupa" x:Class="Occupa.MainPage">
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -48,53 +49,87 @@
             </StackLayout>
         </FlexLayout>
             
-     </FlexLayout> 
-     <ScrollView Orientation="Horizontal">
-         <StackLayout Orientation="Horizontal" Margin="0" Padding="30" BackgroundColor="{StaticResource Accent}">
-            <Button WidthRequest="200" HeightRequest="200" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Anatomi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_1.png">
-                <Button.Image>     
-                    <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_1.png" Android="icons/icon_1.png"></OnPlatform>
-                </Button.Image>
-            </Button>   
-             <Button WidthRequest="200" HeightRequest="200" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Fysiologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_2.png">
-                <Button.Image>     
-                    <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_2.png" Android="icons/icon_2.png"></OnPlatform>
-                </Button.Image>
-            </Button>   
-             <Button WidthRequest="200" HeightRequest="200" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Psykologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_1.png">
-                <Button.Image>     
-                    <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_3.png"></OnPlatform>
-                </Button.Image>
-            </Button>   
-             <Button WidthRequest="200" HeightRequest="200" ContentLayout="Top,0" HorizontalOptions="Center" TextColor="Black" Text="Pædagogik" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
-                <Button.Image>     
-                    <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_4.png" Android="icons/icon_4.png"></OnPlatform>
-                </Button.Image>
-            </Button>  
-             <Button WidthRequest="200" HeightRequest="200" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Ergoterapi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_5.png">
-                <Button.Image>     
-                    <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_5.png" Android="icons/icon_5.png"></OnPlatform>
-                </Button.Image>
-            </Button>  
-             <Button WidthRequest="200" HeightRequest="200" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Sygdomslære" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_6.png">
-                <Button.Image>     
-                    <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_6.png" Android="icons/icon_6.png"></OnPlatform>
-                </Button.Image>
-            </Button>  
-            <Button WidthRequest="200" HeightRequest="200" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Ergoterapi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_7.png">
-                <Button.Image>     
-                    <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_7.png" Android="icons/icon_7.png"></OnPlatform>
-                </Button.Image>
-            </Button> 
-             <Button WidthRequest="200" HeightRequest="200" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Ergoterapi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_8 .png">
-                <Button.Image>     
-                    <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_8.png" Android="icons/icon_8.png"></OnPlatform>
-                </Button.Image>
-            </Button> 
-         </StackLayout> 
-     </ScrollView>       
-  
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+         </FlexLayout> 
+         <StackLayout BackgroundColor="{StaticResource Accent}">
+             <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,30,0,10" Text="Vælg fag"></Label>
+             <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
+                 <StackLayout Orientation="Horizontal" Margin="0" Padding="30,0,30,30">
+                    <Button StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Anatomi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_1.png">
+                        <Button.Image>     
+                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_1.png" Android="icons/icon_1.png"></OnPlatform>
+                        </Button.Image>
+                    </Button>   
+                     <Button StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Fysiologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_2.png">
+                        <Button.Image>     
+                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_2.png" Android="icons/icon_2.png"></OnPlatform>
+                        </Button.Image>
+                    </Button>   
+                     <Button StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Psykologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_1.png">
+                        <Button.Image>     
+                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_3.png"></OnPlatform>
+                        </Button.Image>
+                    </Button>   
+                     <Button StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="Center" TextColor="Black" Text="Pædagogik" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
+                        <Button.Image>     
+                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_4.png" Android="icons/icon_4.png"></OnPlatform>
+                        </Button.Image>
+                    </Button>  
+                     <Button StyleClass="icon"  ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Ergoterapi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_5.png">
+                        <Button.Image>     
+                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_5.png" Android="icons/icon_5.png"></OnPlatform>
+                        </Button.Image>
+                    </Button>  
+                     <Button StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Sygdomslære" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_6.png">
+                        <Button.Image>     
+                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_6.png" Android="icons/icon_6.png"></OnPlatform>
+                        </Button.Image>
+                    </Button>  
+                    <Button StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Ergoterapi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_7.png">
+                        <Button.Image>     
+                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_7.png" Android="icons/icon_7.png"></OnPlatform>
+                        </Button.Image>
+                    </Button> 
+                     <Button StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Ergoterapi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_8 .png">
+                        <Button.Image>     
+                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_8.png" Android="icons/icon_8.png"></OnPlatform>
+                        </Button.Image>
+                    </Button> 
+                 </StackLayout> 
+             </ScrollView>                  
+         </StackLayout>
+        
+        <ScrollView>
+        <ListView ItemsSource="{Binding}">
+            <ListView.ItemTemplate>
+              <DataTemplate>
+                <TextCell TextColor="Blue" Text="{Binding entries.name}">
+     
+                </TextCell>
+              </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+            
+          <RelativeLayout HeightRequest="300">
+            <Image Source="hook.png"
+                        RelativeLayout.XConstraint="399"
+                        RelativeLayout.WidthConstraint=
+                          "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                        RelativeLayout.HeightConstraint=
+                          "{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+            <Grid RelativeLayout.WidthConstraint=
+                      "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                    RelativeLayout.HeightConstraint=
+                      "{ConstraintExpression Type=RelativeToParent, Property=Height}">
+                      
+                 <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Text="Vælg venligst et fag…" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            </Grid>
+         </RelativeLayout>
+ 
+        </ScrollView>
+            
+       
+            
+        
+
     </StackLayout>
 </ContentPage>

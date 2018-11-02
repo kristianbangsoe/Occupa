@@ -1,4 +1,4 @@
-﻿using BookClient.Data;
+﻿using Occupa.Data;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -11,13 +11,13 @@ namespace Occupa
 {
     public partial class MainPage : ContentPage
     {
-        readonly IList<Book> books = new ObservableCollection<Book>();
-        readonly BookManager manager = new BookManager();
+        readonly IList<GroupsModel> groups = new ObservableCollection<GroupsModel>();
+        readonly GroupsManagerModel manager = new GroupsManagerModel();
 
         public MainPage()
         {
 
-            BindingContext = books;
+            BindingContext = groups;
             InitializeComponent();
         }
 
@@ -29,11 +29,14 @@ namespace Occupa
 
             try
             {
-                var bookCollection = await manager.GetAll();
+                var groupCollection = await manager.GetAll();
 
-                foreach (Book book in bookCollection)
+                foreach (GroupsModel group in groupCollection)
                 {
-                    if (books.All(b => b.name != book.name)) ;
+                    if (groups.All(b => b.Name != group.Name))
+                    {
+                        groups.Add(group);
+                    }
                   
                 }
             }

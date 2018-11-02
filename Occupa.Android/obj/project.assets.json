@@ -1032,34 +1032,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Søren Højby\\.nuget\\packages\\": {}
+    "/Users/kristianbangsoe/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Søren Højby\\source\\repos\\Occupa\\Occupa.Android\\Occupa.Android.csproj",
+      "projectUniqueName": "/Users/kristianbangsoe/Projects/Occupa/Occupa.Android/Occupa.Android.csproj",
       "projectName": "Occupa.Android",
-      "projectPath": "C:\\Users\\Søren Højby\\source\\repos\\Occupa\\Occupa.Android\\Occupa.Android.csproj",
-      "packagesPath": "C:\\Users\\Søren Højby\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Søren Højby\\source\\repos\\Occupa\\Occupa.Android\\obj\\",
+      "projectPath": "/Users/kristianbangsoe/Projects/Occupa/Occupa.Android/Occupa.Android.csproj",
+      "packagesPath": "/Users/kristianbangsoe/.nuget/packages/",
+      "outputPath": "/Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj",
       "projectStyle": "PackageReference",
-      "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Søren Højby\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/kristianbangsoe/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid81"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\Søren Højby\\source\\repos\\Occupa\\Occupa\\Occupa.csproj": {
-              "projectPath": "C:\\Users\\Søren Højby\\source\\repos\\Occupa\\Occupa\\Occupa.csproj"
+            "/Users/kristianbangsoe/Projects/Occupa/Occupa/Occupa.csproj": {
+              "projectPath": "/Users/kristianbangsoe/Projects/Occupa/Occupa/Occupa.csproj"
             }
           }
         }
@@ -1068,29 +1065,29 @@
     "frameworks": {
       "monoandroid81": {
         "dependencies": {
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "3.1.0.697729"
+          },
           "Xamarin.Android.Support.Design": {
             "target": "Package",
-            "version": "[27.0.2.1, )"
-          },
-          "Xamarin.Android.Support.v4": {
-            "target": "Package",
-            "version": "[27.0.2.1, )"
+            "version": "27.0.2.1"
           },
           "Xamarin.Android.Support.v7.AppCompat": {
             "target": "Package",
-            "version": "[27.0.2.1, )"
+            "version": "27.0.2.1"
+          },
+          "Xamarin.Android.Support.v4": {
+            "target": "Package",
+            "version": "27.0.2.1"
           },
           "Xamarin.Android.Support.v7.CardView": {
             "target": "Package",
-            "version": "[27.0.2.1, )"
+            "version": "27.0.2.1"
           },
           "Xamarin.Android.Support.v7.MediaRouter": {
             "target": "Package",
-            "version": "[27.0.2.1, )"
-          },
-          "Xamarin.Forms": {
-            "target": "Package",
-            "version": "[3.1.0.697729, )"
+            "version": "27.0.2.1"
           }
         }
       }

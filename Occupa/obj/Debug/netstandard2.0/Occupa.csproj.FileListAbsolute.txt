@@ -11,3 +11,18 @@
 /Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Occupa.dll
 /Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Occupa.pdb
+/Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Styles/master.css.g.cs
+C:\Users\Søren Højby\source\repos\Occupa\Occupa\bin\Debug\netstandard2.0\Occupa.deps.json
+C:\Users\Søren Højby\source\repos\Occupa\Occupa\bin\Debug\netstandard2.0\Occupa.dll
+C:\Users\Søren Højby\source\repos\Occupa\Occupa\bin\Debug\netstandard2.0\Occupa.pdb
+C:\Users\Søren Højby\source\repos\Occupa\Occupa\obj\Debug\netstandard2.0\Occupa.csprojAssemblyReference.cache
+C:\Users\Søren Højby\source\repos\Occupa\Occupa\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Søren Højby\source\repos\Occupa\Occupa\obj\Debug\netstandard2.0\Dashboard.xaml.g.cs
+C:\Users\Søren Højby\source\repos\Occupa\Occupa\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Søren Højby\source\repos\Occupa\Occupa\obj\Debug\netstandard2.0\Styles\master.css.g.cs
+C:\Users\Søren Højby\source\repos\Occupa\Occupa\obj\Debug\netstandard2.0\Occupa.csproj.CoreCompileInputs.cache
+C:\Users\Søren Højby\source\repos\Occupa\Occupa\obj\Debug\netstandard2.0\Occupa.AssemblyInfoInputs.cache
+C:\Users\Søren Højby\source\repos\Occupa\Occupa\obj\Debug\netstandard2.0\Occupa.AssemblyInfo.cs
+C:\Users\Søren Højby\source\repos\Occupa\Occupa\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Søren Højby\source\repos\Occupa\Occupa\obj\Debug\netstandard2.0\Occupa.dll
+C:\Users\Søren Højby\source\repos\Occupa\Occupa\obj\Debug\netstandard2.0\Occupa.pdb

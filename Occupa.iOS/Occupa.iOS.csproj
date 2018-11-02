@@ -172,6 +172,7 @@
     <BundleResource Include="Resources\icons\icon_6.png" />
     <BundleResource Include="Resources\icons\icon_7.png" />
     <BundleResource Include="Resources\icons\icon_8.png" />
+    <BundleResource Include="Resources\hook.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\icons\" />

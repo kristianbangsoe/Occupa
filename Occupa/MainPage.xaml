@@ -33,12 +33,12 @@
         </Entry>
             
         <FlexLayout WidthRequest="300" JustifyContent="SpaceAround">
-            <Button WidthRequest="25" HeightRequest="25" x:Name="btn_fav" Image="heart.png">
+            <Button WidthRequest="25" Margin="0,25,0,0" HeightRequest="25" x:Name="btn_fav" Image="heart.png">
                 <Button.Image>
                     <OnPlatform x:TypeArguments="FileImageSource" iOS="heart.png" Android="heart.png"></OnPlatform>
                 </Button.Image>
             </Button>
-             <Button WidthRequest="25" x:Name="btn_notes" Image="list.png">
+             <Button WidthRequest="25" HeightRequest="25" Margin="0,25,0,0" x:Name="btn_notes" Image="list.png">
                 <Button.Image>
                     <OnPlatform x:TypeArguments="FileImageSource" iOS="list.png" Android="list.png"></OnPlatform>
                 </Button.Image>
@@ -98,7 +98,8 @@
              </ScrollView>                  
          </StackLayout>
         
-        <ScrollView>
+              
+        <ScrollView VerticalOptions="FillAndExpand">
         <ListView ItemsSource="{Binding}">
             <ListView.ItemTemplate>
               <DataTemplate>
@@ -108,22 +109,16 @@
               </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-            
-          <RelativeLayout HeightRequest="300">
-            <Image Source="hook.png"
-                        RelativeLayout.XConstraint="399"
-                        RelativeLayout.WidthConstraint=
-                          "{ConstraintExpression Type=RelativeToParent, Property=Width}"
-                        RelativeLayout.HeightConstraint=
-                          "{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
-            <Grid RelativeLayout.WidthConstraint=
-                      "{ConstraintExpression Type=RelativeToParent, Property=Width}"
-                    RelativeLayout.HeightConstraint=
-                      "{ConstraintExpression Type=RelativeToParent, Property=Height}">
+           <AbsoluteLayout>
+                          <Image  AbsoluteLayout.LayoutBounds="1,1,-1,-1"
+           AbsoluteLayout.LayoutFlags="PositionProportional"  Source="hook.png"/> 
+                            <Grid AbsoluteLayout.LayoutBounds=".50,.50,-1,-1"
+           AbsoluteLayout.LayoutFlags="PositionProportional" >
                       
                  <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Text="Vælg venligst et fag…" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
             </Grid>
-         </RelativeLayout>
+            </AbsoluteLayout>
+
  
         </ScrollView>
             

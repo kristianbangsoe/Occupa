@@ -1,15 +1,9 @@
 ﻿<Properties StartupConfiguration="{3907CD95-3597-4BD2-953D-E1ECE540355C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Occupa/Data/GroupsManagerModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Occupa/MainPage.xaml">
     <Files>
-      <File FileName="Occupa/MainPage.xaml" Line="13" Column="4" />
-      <File FileName="Occupa/App.xaml" Line="6" Column="15" />
-      <File FileName="Occupa/Data/Book.cs" Line="4" Column="11" />
-      <File FileName="Occupa/Styles/master.css" Line="2" Column="2" />
-      <File FileName="Occupa/MainPage.xaml.cs" Line="8" Column="21" />
-      <File FileName="Occupa/Data/BookManager.cs" Line="8" Column="11" />
-      <File FileName="Occupa/Dashboard.xaml" Line="9" Column="1" />
-      <File FileName="Occupa/Data/GroupsModel.cs" Line="1" Column="1" />
-      <File FileName="Occupa/Data/GroupsManagerModel.cs" Line="1" Column="1" />
+      <File FileName="../../../../Library/Frameworks/Mono.framework/Versions/5.12.0/lib/mono/msbuild/15.0/bin/Microsoft.Common.CurrentVersion.targets" Line="2135" Column="22" />
+      <File FileName="Occupa/MainPage.xaml" Line="19" Column="39" />
+      <File FileName="Occupa/MainPage.xaml.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -17,7 +11,7 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Occupa.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.25603087-0D8A-4A02-A14E-DBD65DEF3554" automaticSigning="False" />
+  <MonoDevelop.Ide.ItemProperties.Occupa.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.633506BF-03FE-4873-9844-39D08388E855" automaticSigning="False" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Occupa.Android PreferredExecutionTarget="Android.Android_Accelerated_Oreo" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.ItemProperties.Occupa.Android PreferredExecutionTarget="Android.my_device" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
 </Properties>

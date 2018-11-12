@@ -1,6 +1,9 @@
-Occupa
-System.Runtime
 FormsViewGroup
+Newtonsoft.Json
+Occupa
+System.Net.Http.Extensions
+System.Net.Http.Primitives
+System.Runtime
 Xamarin.Android.Arch.Core.Common
 Xamarin.Android.Arch.Lifecycle.Common
 Xamarin.Android.Arch.Lifecycle.Runtime
@@ -25,6 +28,3 @@ Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
 netstandard
-Newtonsoft.Json
-System.Net.Http.Extensions
-System.Net.Http.Primitives

@@ -3,9 +3,13 @@
 /Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/Java.Interop.dll
 /Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/Mono.Android.dll
 /Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/mscorlib.dll
+/Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/Newtonsoft.Json.dll
 /Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/Occupa.dll
 /Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/System.Core.dll
 /Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/System.dll
+/Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/System.Net.Http.dll
+/Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/System.Net.Http.Extensions.dll
+/Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/System.Net.Http.Primitives.dll
 /Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/System.Xml.dll
 /Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/System.Xml.Linq.dll
 /Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/Xamarin.Android.Arch.Core.Common.dll
@@ -46,7 +50,6 @@
 /Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/System.Runtime.InteropServices.dll
 /Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/System.Runtime.Extensions.dll
 /Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/System.Reflection.Extensions.dll
-/Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/System.Net.Http.dll
 /Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/System.Runtime.Serialization.dll
 /Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/System.ServiceModel.Internals.dll
 /Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/netstandard.dll
@@ -64,3 +67,4 @@
 /Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/System.Web.Services.dll
 /Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/System.Xml.XPath.XDocument.dll
 /Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/Mono.Security.dll
+/Users/kristianbangsoe/Projects/Occupa/Occupa.Android/obj/Debug/android/assets/System.Net.Primitives.dll

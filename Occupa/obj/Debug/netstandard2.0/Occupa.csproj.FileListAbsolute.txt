@@ -26,3 +26,4 @@ C:/Users/Søren Højby/source/repos/Occupa/Occupa/obj/Debug/netstandard2.0/Occup
 /Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Occupa.dll
 /Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Occupa.pdb
+/Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Occupa.csprojAssemblyReference.cache

@@ -811,11 +811,12 @@
       ]
     },
     "Microsoft.Bcl.Build/1.0.14": {
-      "sha512": "57EJ/NGEDQkIlQs9aO4adkYeaHMdg+pn5D8RfO1ZXQJgHOjTfGH+kWfppEaD6cg0PE2kGn9/GsACcu2LLyJM0g==",
+      "sha512": "cDLKSvNvRa519hplsbSoYqO69TjdDIhfjtKUM0g20/nVROoWsGav9KCI9HtnGjLmdV1+TcUUDhbotcllibjPEA==",
       "type": "package",
       "path": "microsoft.bcl.build/1.0.14",
+      "hasTools": true,
       "files": [
-        ".signature.p7s",
+        ".nupkg.metadata",
         "License-Stable.rtf",
         "content/net40/_._",
         "content/netcore45/_._",
@@ -899,10 +900,12 @@
       ]
     },
     "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "sha512": "znZGbws7E4BA9jxNZ7FuiIRI3C9hrgatVQSTKhIYZYNOud4M5VfGlTYi6RdYO5sQrebFuF/g9UEV3hOxDMXF6Q==",
       "type": "package",
       "path": "newtonsoft.json/11.0.2",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
@@ -1084,44 +1087,48 @@
     ]
   },
   "packageFolders": {
-    "/Users/kristianbangsoe/.nuget/packages/": {}
+    "C:\\Users\\SørenHøjby\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kristianbangsoe/Projects/Occupa/Occupa.iOS/Occupa.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\SørenHøjby\\source\\repos\\Occupa\\Occupa.iOS\\Occupa.iOS.csproj",
       "projectName": "Occupa.iOS",
-      "projectPath": "/Users/kristianbangsoe/Projects/Occupa/Occupa.iOS/Occupa.iOS.csproj",
-      "packagesPath": "/Users/kristianbangsoe/.nuget/packages/",
-      "outputPath": "/Users/kristianbangsoe/Projects/Occupa/Occupa.iOS/obj",
+      "projectPath": "C:\\Users\\SørenHøjby\\source\\repos\\Occupa\\Occupa.iOS\\Occupa.iOS.csproj",
+      "packagesPath": "C:\\Users\\SørenHøjby\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SørenHøjby\\source\\repos\\Occupa\\Occupa.iOS\\obj\\",
       "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/kristianbangsoe/.config/NuGet/NuGet.Config"
+        "C:\\Users\\SørenHøjby\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/kristianbangsoe/Projects/Occupa/Occupa/Occupa.csproj": {
-              "projectPath": "/Users/kristianbangsoe/Projects/Occupa/Occupa/Occupa.csproj"
+            "C:\\Users\\SørenHøjby\\source\\repos\\Occupa\\Occupa\\Occupa.csproj": {
+              "projectPath": "C:\\Users\\SørenHøjby\\source\\repos\\Occupa\\Occupa\\Occupa.csproj"
             }
           }
         }
       }
     },
-    "dependencies": {
-      "Xamarin.Forms": {
-        "target": "Package",
-        "version": "[3.3.0.967583, )"
-      }
-    },
     "frameworks": {
-      "xamarinios10": {}
+      "xamarinios10": {
+        "dependencies": {
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "[3.3.0.967583, )"
+          }
+        }
+      }
     },
     "runtimes": {
       "win": {

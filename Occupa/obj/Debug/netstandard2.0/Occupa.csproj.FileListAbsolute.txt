@@ -26,3 +26,16 @@ C:/Users/Søren Højby/source/repos/Occupa/Occupa/obj/Debug/netstandard2.0/Occup
 /Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Occupa.dll
 /Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Occupa.pdb
 /Users/kristianbangsoe/Projects/Occupa/Occupa/obj/Debug/netstandard2.0/Occupa.csprojAssemblyReference.cache
+C:\Users\SørenHøjby\Source\Repos\Occupa\Occupa\bin\Debug\netstandard2.0\Occupa.deps.json
+C:\Users\SørenHøjby\Source\Repos\Occupa\Occupa\bin\Debug\netstandard2.0\Occupa.dll
+C:\Users\SørenHøjby\Source\Repos\Occupa\Occupa\bin\Debug\netstandard2.0\Occupa.pdb
+C:\Users\SørenHøjby\Source\Repos\Occupa\Occupa\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\SørenHøjby\Source\Repos\Occupa\Occupa\obj\Debug\netstandard2.0\Dashboard.xaml.g.cs
+C:\Users\SørenHøjby\Source\Repos\Occupa\Occupa\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\SørenHøjby\Source\Repos\Occupa\Occupa\obj\Debug\netstandard2.0\Styles\master.css.g.cs
+C:\Users\SørenHøjby\Source\Repos\Occupa\Occupa\obj\Debug\netstandard2.0\Occupa.csproj.CoreCompileInputs.cache
+C:\Users\SørenHøjby\Source\Repos\Occupa\Occupa\obj\Debug\netstandard2.0\Occupa.AssemblyInfoInputs.cache
+C:\Users\SørenHøjby\Source\Repos\Occupa\Occupa\obj\Debug\netstandard2.0\Occupa.AssemblyInfo.cs
+C:\Users\SørenHøjby\Source\Repos\Occupa\Occupa\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\SørenHøjby\Source\Repos\Occupa\Occupa\obj\Debug\netstandard2.0\Occupa.dll
+C:\Users\SørenHøjby\Source\Repos\Occupa\Occupa\obj\Debug\netstandard2.0\Occupa.pdb

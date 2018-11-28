@@ -3,7 +3,7 @@
 
 # Visual Studio (>=2015) project-specific, machine local files
 .vs/
-
+Occupa/obj/Debug/
 # User-specific files
 *.suo
 *.user

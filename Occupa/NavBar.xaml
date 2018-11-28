@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Occupa.NavBar">
-    <ContentPage.Resources>
+    <ContentView.Resources>
         <ResourceDictionary>
             <!--Page Level Resources: Compatibile with Xamarin Live Player -->
             <Color x:Key="Primary">#26A69A</Color>
@@ -8,7 +8,7 @@
             <Color x:Key="Border">#EDEDED</Color>
             <Color x:Key="LightTextColor">#999999</Color>
         </ResourceDictionary>
-    </ContentPage.Resources>
+    </ContentView.Resources>
     
     <!-- GUIDE TO IMPLEMENTATION -->
     <!-- Derefter tilføj dette til ContenPage wrapperenpå MainPage.xaml: xmlns:views="Occupa.NavBar" -->

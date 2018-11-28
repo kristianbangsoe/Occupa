@@ -724,7 +724,6 @@
       "type": "package",
       "path": "microsoft.bcl/1.1.10",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "License-Stable.rtf",
         "lib/Xamarin.iOS10/_._",
@@ -837,7 +836,6 @@
       "type": "package",
       "path": "microsoft.net.http/2.2.29",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "License-Stable.rtf",
         "lib/Xamarin.iOS10/System.Net.Http.Extensions.XML",
@@ -936,7 +934,6 @@
       "type": "package",
       "path": "xamarin.forms/3.3.0.967583",
       "files": [
-        ".nupkg.metadata",
         ".signature.p7s",
         "build/Xamarin.Forms.DefaultItems.props",
         "build/Xamarin.Forms.DefaultItems.targets",
@@ -1095,11 +1092,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SørenHøjby\\Source\\Repos\\Occupa\\Occupa.iOS\\Occupa.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\SørenHøjby\\source\\repos\\Occupa\\Occupa.iOS\\Occupa.iOS.csproj",
       "projectName": "Occupa.iOS",
-      "projectPath": "C:\\Users\\SørenHøjby\\Source\\Repos\\Occupa\\Occupa.iOS\\Occupa.iOS.csproj",
+      "projectPath": "C:\\Users\\SørenHøjby\\source\\repos\\Occupa\\Occupa.iOS\\Occupa.iOS.csproj",
       "packagesPath": "C:\\Users\\SørenHøjby\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SørenHøjby\\Source\\Repos\\Occupa\\Occupa.iOS\\obj\\",
+      "outputPath": "C:\\Users\\SørenHøjby\\source\\repos\\Occupa\\Occupa.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1116,8 +1113,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\SørenHøjby\\Source\\Repos\\Occupa\\Occupa\\Occupa.csproj": {
-              "projectPath": "C:\\Users\\SørenHøjby\\Source\\Repos\\Occupa\\Occupa\\Occupa.csproj"
+            "C:\\Users\\SørenHøjby\\source\\repos\\Occupa\\Occupa\\Occupa.csproj": {
+              "projectPath": "C:\\Users\\SørenHøjby\\source\\repos\\Occupa\\Occupa\\Occupa.csproj"
             }
           }
         }

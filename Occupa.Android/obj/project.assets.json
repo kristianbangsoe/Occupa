@@ -1060,11 +1060,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SørenHøjby\\source\\repos\\Occupa\\Occupa.Android\\Occupa.Android.csproj",
+      "projectUniqueName": "C:\\Users\\SørenHøjby\\Source\\Repos\\Occupa\\Occupa.Android\\Occupa.Android.csproj",
       "projectName": "Occupa.Android",
-      "projectPath": "C:\\Users\\SørenHøjby\\source\\repos\\Occupa\\Occupa.Android\\Occupa.Android.csproj",
+      "projectPath": "C:\\Users\\SørenHøjby\\Source\\Repos\\Occupa\\Occupa.Android\\Occupa.Android.csproj",
       "packagesPath": "C:\\Users\\SørenHøjby\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SørenHøjby\\source\\repos\\Occupa\\Occupa.Android\\obj\\",
+      "outputPath": "C:\\Users\\SørenHøjby\\Source\\Repos\\Occupa\\Occupa.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1081,8 +1081,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\SørenHøjby\\source\\repos\\Occupa\\Occupa\\Occupa.csproj": {
-              "projectPath": "C:\\Users\\SørenHøjby\\source\\repos\\Occupa\\Occupa\\Occupa.csproj"
+            "C:\\Users\\SørenHøjby\\Source\\Repos\\Occupa\\Occupa\\Occupa.csproj": {
+              "projectPath": "C:\\Users\\SørenHøjby\\Source\\Repos\\Occupa\\Occupa\\Occupa.csproj"
             }
           }
         }

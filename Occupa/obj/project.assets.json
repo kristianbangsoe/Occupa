@@ -605,11 +605,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SørenHøjby\\source\\repos\\Occupa\\Occupa\\Occupa.csproj",
+      "projectUniqueName": "C:\\Users\\SørenHøjby\\Source\\Repos\\Occupa\\Occupa\\Occupa.csproj",
       "projectName": "Occupa",
-      "projectPath": "C:\\Users\\SørenHøjby\\source\\repos\\Occupa\\Occupa\\Occupa.csproj",
+      "projectPath": "C:\\Users\\SørenHøjby\\Source\\Repos\\Occupa\\Occupa\\Occupa.csproj",
       "packagesPath": "C:\\Users\\SørenHøjby\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SørenHøjby\\source\\repos\\Occupa\\Occupa\\obj\\",
+      "outputPath": "C:\\Users\\SørenHøjby\\Source\\Repos\\Occupa\\Occupa\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

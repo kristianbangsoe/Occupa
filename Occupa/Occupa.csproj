@@ -17,4 +17,10 @@
   <ItemGroup>
     <Folder Include="Styles\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="MyView.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="MyView.xaml" />
+  </ItemGroup>
 </Project>

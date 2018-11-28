@@ -1114,14 +1114,15 @@
         }
       }
     },
-    "dependencies": {
-      "Xamarin.Forms": {
-        "target": "Package",
-        "version": "[3.3.0.967583, )"
-      }
-    },
     "frameworks": {
-      "xamarinios10": {}
+      "xamarinios10": {
+        "dependencies": {
+          "Xamarin.Forms": {
+            "target": "Package",
+            "version": "3.3.0.967583"
+          }
+        }
+      }
     },
     "runtimes": {
       "win": {

@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Occupa.Android", "Occupa.An
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Occupa.iOS", "Occupa.iOS\Occupa.iOS.csproj", "{3907CD95-3597-4BD2-953D-E1ECE540355C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Occupa", "Occupa\Occupa.csproj", "{B37FED80-F7A8-4887-9647-AAABBE4118F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Occupa", "Occupa\Occupa.csproj", "{B37FED80-F7A8-4887-9647-AAABBE4118F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -83,10 +83,11 @@ namespace Occupa
 
         }
 
-
-
-
-
+        private async void clicked_btn_anatomi(object sender, EventArgs e)
+        {
+            var UserLogin = new UserLogin();
+            await Navigation.PushModalAsync(UserLogin);
+        }
     }
 }
 

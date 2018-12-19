@@ -11,40 +11,81 @@ namespace Occupa
 {
     public partial class MainPage : ContentPage
     {
-        readonly IList<GroupsModel> groups = new ObservableCollection<GroupsModel>();
-        readonly GroupsManagerModel manager = new GroupsManagerModel();
 
         public MainPage()
         {
 
-            BindingContext = groups;
             InitializeComponent();
         }
-
-
-        async void OnRefresh(object sender, EventArgs e)
+        private void clicked_anatomi(object sender, EventArgs e)
         {
-            // Turn on network indicator
-            this.IsBusy = true;
+            box_anatomi.IsVisible = true;
+            box_fysiologi.IsVisible = false;
+            box_psykologi.IsVisible = false;
+            box_pædagogik.IsVisible = false;
+            box_ergoterapi.IsVisible = false;
+            box_sygdomslære.IsVisible = false;
 
-            try
-            {
-                var groupCollection = await manager.GetAll();
-
-                foreach (GroupsModel group in groupCollection)
-                {
-                    if (groups.All(b => b.Name != group.Name))
-                    {
-                        groups.Add(group);
-                    }
-                  
-                }
-            }
-            finally
-            {
-                this.IsBusy = false;
-            }
         }
+
+        private void clicked_fysiologi(object sender, EventArgs e)
+        {
+            box_anatomi.IsVisible = false;
+            box_fysiologi.IsVisible = true;
+            box_psykologi.IsVisible = false;
+            box_pædagogik.IsVisible = false;
+            box_ergoterapi.IsVisible = false;
+            box_sygdomslære.IsVisible = false;
+
+        }
+
+        private void clicked_psykologi(object sender, EventArgs e)
+        {
+            box_anatomi.IsVisible = false;
+            box_fysiologi.IsVisible = false;
+            box_psykologi.IsVisible = true;
+            box_pædagogik.IsVisible = false;
+            box_ergoterapi.IsVisible = false;
+            box_sygdomslære.IsVisible = false;
+
+        }
+
+        private void clicked_pædagogik(object sender, EventArgs e)
+        {
+            box_anatomi.IsVisible = false;
+            box_fysiologi.IsVisible = false;
+            box_psykologi.IsVisible = false;
+            box_pædagogik.IsVisible = true;
+            box_ergoterapi.IsVisible = false;
+            box_sygdomslære.IsVisible = false;
+
+        }
+
+        private void clicked_ergoterapi(object sender, EventArgs e)
+        {
+            box_anatomi.IsVisible = false;
+            box_fysiologi.IsVisible = false;
+            box_psykologi.IsVisible = false;
+            box_pædagogik.IsVisible = false;
+            box_ergoterapi.IsVisible = true;
+            box_sygdomslære.IsVisible = false;
+
+        }
+
+        private void clicked_sygdomslære(object sender, EventArgs e)
+        {
+            box_anatomi.IsVisible = false;
+            box_fysiologi.IsVisible = false;
+            box_psykologi.IsVisible = false;
+            box_pædagogik.IsVisible = false;
+            box_ergoterapi.IsVisible = false;
+            box_sygdomslære.IsVisible = true;
+
+        }
+
+
+
+
 
     }
 }

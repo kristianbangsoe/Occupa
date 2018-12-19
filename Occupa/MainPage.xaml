@@ -7,124 +7,274 @@
             <Color x:Key="Primary">#26A69A</Color>
             <Color x:Key="Accent">#F7F7F7</Color>
             <Color x:Key="Border">#EDEDED</Color>
+            <Color x:Key="Anatomi">#FF7043</Color>
+            <Color x:Key="Fysiologi">#FF7043</Color>
+            <Color x:Key="Psykologi">#7E57C2</Color>
+            <Color x:Key="Pædagogik">#7E57C2</Color>
+            <Color x:Key="Ergoterapi">#66BB6A</Color>
+            <Color x:Key="Sygdomslære">#66BB6A</Color>
             <Color x:Key="LightTextColor">#999999</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
-   
-    <StackLayout Margin="0,25,0,0" BackgroundColor="White">
-     <FlexLayout JustifyContent="SpaceAround" BackgroundColor="{StaticResource Primary}">
-        <StackLayout Orientation="Horizontal" Margin="20,20,25,20">
-             <Button x:Name="btn_nav" Image="nav.png">
-                <Button.Image>
-                    <OnPlatform x:TypeArguments="FileImageSource" iOS="nav.png" Android="nav.png"></OnPlatform>
-                </Button.Image>
-            </Button>
-            <Image WidthRequest="100" Margin="20,0,0,0" Source="logo.png"></Image> 
-        </StackLayout>
-            
-        <Entry HeightRequest="45" WidthRequest="400" FlexLayout.AlignSelf="Center" Placeholder="Søg efter øvelser...">
-                <Entry.Keyboard>
-                <Keyboard x:FactoryMethod="Create">
-                    <x:Arguments>
-                        <KeyboardFlags>Suggestions,CapitalizeCharacter</KeyboardFlags>
-                    </x:Arguments>
-                </Keyboard>
-            </Entry.Keyboard>
-        </Entry>
-            
-        <FlexLayout WidthRequest="300" JustifyContent="SpaceAround">
-            <Button WidthRequest="25" Margin="0,25,0,0" HeightRequest="25" x:Name="btn_fav" Image="heart.png">
-                <Button.Image>
-                    <OnPlatform x:TypeArguments="FileImageSource" iOS="heart.png" Android="heart.png"></OnPlatform>
-                </Button.Image>
-            </Button>
-             <Button WidthRequest="25" HeightRequest="25" Margin="0,25,0,0" x:Name="btn_notes" Image="list.png">
-                <Button.Image>
-                    <OnPlatform x:TypeArguments="FileImageSource" iOS="list.png" Android="list.png"></OnPlatform>
-                </Button.Image>
-            </Button>
-            <StackLayout Orientation="Horizontal">
-                <Image WidthRequest="30" Margin="20,0,0,0" Source="profile.png"></Image>
-                <Label Margin="5,30,0,0" TextColor="White" Text="Louise C."></Label>    
+    <StackLayout Margin="0,0,0,0" BackgroundColor="White">
+        <Grid x:Name="alayout_container2" BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*" />
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="50*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackLayout  BackgroundColor="{StaticResource Primary}"  Grid.Row="0" Grid.Column="0">
+                <FlexLayout JustifyContent="SpaceAround" BackgroundColor="{StaticResource Primary}">
+                    <StackLayout Orientation="Horizontal" Margin="20,20,25,20">
+                        <Button x:Name="btn_nav" Image="nav.png">
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource" iOS="nav.png" Android="nav.png"></OnPlatform>
+                            </Button.Image>
+                        </Button>
+                        <Image WidthRequest="100" Margin="20,0,0,0" Source="logo.png"></Image>
+                    </StackLayout>
+
+                    <Entry HeightRequest="45" WidthRequest="400" FlexLayout.AlignSelf="Center" Placeholder="Søg efter øvelser...">
+                        <Entry.Keyboard>
+                            <Keyboard x:FactoryMethod="Create">
+                                <x:Arguments>
+                                    <KeyboardFlags>Suggestions,CapitalizeCharacter</KeyboardFlags>
+                                </x:Arguments>
+                            </Keyboard>
+                        </Entry.Keyboard>
+                    </Entry>
+
+                    <FlexLayout WidthRequest="300" JustifyContent="SpaceAround">
+                        <Button WidthRequest="25" Margin="0,25,0,0" HeightRequest="25" x:Name="btn_fav" Image="heart.png">
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource" iOS="heart.png" Android="heart.png"></OnPlatform>
+                            </Button.Image>
+                        </Button>
+                        <Button WidthRequest="25" HeightRequest="25" Margin="0,25,0,0" x:Name="btn_notes" Image="list.png">
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource" iOS="list.png" Android="list.png"></OnPlatform>
+                            </Button.Image>
+                        </Button>
+                        <StackLayout Orientation="Horizontal">
+                            <Image WidthRequest="30" Margin="20,0,0,0" Source="profile.png"></Image>
+                            <Label Margin="5,30,0,0" TextColor="White" Text="Louise C."></Label>
+                        </StackLayout>
+                    </FlexLayout>
+
+                </FlexLayout>
+
             </StackLayout>
-        </FlexLayout>
-            
-         </FlexLayout> 
-         <StackLayout BackgroundColor="{StaticResource Accent}">
-             <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,30,0,10" Text="Vælg fag"></Label>
-             <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
-                 <StackLayout Orientation="Horizontal" Margin="0" Padding="30,0,30,30">
-                    <Button StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Anatomi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_1.png">
-                        <Button.Image>     
-                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_1.png" Android="icons/icon_1.png"></OnPlatform>
-                        </Button.Image>
-                    </Button>   
-                     <Button StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Fysiologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_2.png">
-                        <Button.Image>     
-                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_2.png" Android="icons/icon_2.png"></OnPlatform>
-                        </Button.Image>
-                    </Button>   
-                     <Button StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Psykologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_1.png">
-                        <Button.Image>     
-                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_3.png"></OnPlatform>
-                        </Button.Image>
-                    </Button>   
-                     <Button StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="Center" TextColor="Black" Text="Pædagogik" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
-                        <Button.Image>     
-                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_4.png" Android="icons/icon_4.png"></OnPlatform>
-                        </Button.Image>
-                    </Button>  
-                     <Button StyleClass="icon"  ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Ergoterapi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_5.png">
-                        <Button.Image>     
-                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_5.png" Android="icons/icon_5.png"></OnPlatform>
-                        </Button.Image>
-                    </Button>  
-                     <Button StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Sygdomslære" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_6.png">
-                        <Button.Image>     
-                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_6.png" Android="icons/icon_6.png"></OnPlatform>
-                        </Button.Image>
-                    </Button>  
-                    <Button StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Ergoterapi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_7.png">
-                        <Button.Image>     
-                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_7.png" Android="icons/icon_7.png"></OnPlatform>
-                        </Button.Image>
-                    </Button> 
-                     <Button StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Ergoterapi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_8 .png">
-                        <Button.Image>     
-                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_8.png" Android="icons/icon_8.png"></OnPlatform>
-                        </Button.Image>
-                    </Button> 
-                 </StackLayout> 
-             </ScrollView>                  
-         </StackLayout>
-        
-              
-        <ScrollView VerticalOptions="FillAndExpand">
-        <ListView ItemsSource="{Binding}">
-            <ListView.ItemTemplate>
-              <DataTemplate>
-                <TextCell TextColor="Blue" Text="{Binding entries.name}">
-     
-                </TextCell>
-              </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-           <AbsoluteLayout>
-                          <Image  AbsoluteLayout.LayoutBounds="1,1,-1,-1"
-           AbsoluteLayout.LayoutFlags="PositionProportional"  Source="hook.png"/> 
-                            <Grid AbsoluteLayout.LayoutBounds=".50,.50,-1,-1"
-           AbsoluteLayout.LayoutFlags="PositionProportional" >
-                      
-                 <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Text="Vælg venligst et fag…" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-            </Grid>
-            </AbsoluteLayout>
+            <StackLayout  BackgroundColor="{StaticResource Accent}"  Grid.Row="1" Grid.Column="0">
+                <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Vælg fag"></Label>
+                <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal" >
+                    <StackLayout Orientation="Horizontal" Margin="0" Padding="30,0,30,30">
+                        <Button Clicked="clicked_anatomi" StyleClass="icon" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Anatomi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_1.png">
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_1.png" Android="icons/icon_1.png"></OnPlatform>
+                            </Button.Image>
+                        </Button>
+                        <Button Clicked="clicked_fysiologi"  StyleClass="icon" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Fysiologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_2.png">
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_2.png" Android="icons/icon_2.png"></OnPlatform>
+                            </Button.Image>
+                        </Button>
+                        <Button Clicked="clicked_psykologi" StyleClass="icon" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Psykologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_1.png">
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_3.png"></OnPlatform>
+                            </Button.Image>
+                        </Button>
+                        <Button Clicked="clicked_pædagogik" StyleClass="icon" ContentLayout="Top,-30" HorizontalOptions="Center" TextColor="Black" Text="Pædagogik" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_4.png" Android="icons/icon_4.png"></OnPlatform>
+                            </Button.Image>
+                        </Button>
+                        <Button Clicked="clicked_ergoterapi" StyleClass="icon"  ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Ergoterapi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_5.png">
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_5.png" Android="icons/icon_5.png"></OnPlatform>
+                            </Button.Image>
+                        </Button>
+                        <Button Clicked="clicked_sygdomslære" StyleClass="icon" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Sygdomslære" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_7.png">
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_7.png" Android="icons/icon_7.png"></OnPlatform>
+                            </Button.Image>
+                        </Button>
 
- 
-        </ScrollView>
-            
-       
-            
-        
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
 
+
+
+
+            <StackLayout  BackgroundColor="White"  Grid.Row="2" Grid.Column="0">
+
+                <!-- Anatomi -->
+                <StackLayout x:Name="box_anatomi" IsVisible="false">
+                    <StackLayout Orientation="Horizontal">
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource Anatomi}" FontSize="30" Margin="0" Text="Anatomi" VerticalOptions="Start" HorizontalOptions="Start" />
+                    </StackLayout>
+                    <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal" >
+                        <FlexLayout JustifyContent="SpaceAround" AlignContent="Start">
+                            <StackLayout Orientation="Horizontal" Margin="0" Padding="30,0,30,30"  >
+
+                                <Button StyleClass="icon" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Anatomi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_1.png">
+                                    <Button.Image>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_ana1.png" Android="icons/icon_ana1.png"></OnPlatform>
+                                    </Button.Image>
+                                </Button>
+                                <Button StyleClass="icon" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Fysiologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_2.png">
+                                    <Button.Image>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_ana2.png" Android="icons/icon_ana2.png"></OnPlatform>
+                                    </Button.Image>
+                                </Button>
+                            </StackLayout>
+                        </FlexLayout>
+                    </ScrollView>
+                </StackLayout>
+
+
+                <!-- Fysiologi -->
+                <StackLayout x:Name="box_fysiologi" IsVisible="false">
+                    <StackLayout Orientation="Horizontal">
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource Fysiologi}" FontSize="30" Margin="0" Text="Fysiologi" VerticalOptions="Start" HorizontalOptions="Start" />
+                    </StackLayout>
+                    <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
+                        <FlexLayout JustifyContent="SpaceAround" AlignContent="Start">
+                            <StackLayout Orientation="Horizontal" Margin="0" Padding="30,0,30,30"  >
+
+                                <Button StyleClass="icon" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Anatomi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                                    <Button.Image>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_fys1.png" Android="icons/icon_fys1.png"></OnPlatform>
+                                    </Button.Image>
+                                </Button>
+                                <Button StyleClass="icon" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Fysiologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
+                                    <Button.Image>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_fys2.png" Android="icons/icon_fys2.png"></OnPlatform>
+                                    </Button.Image>
+                                </Button>
+                            </StackLayout>
+                        </FlexLayout>
+                    </ScrollView>
+                </StackLayout>
+
+
+                <!-- Psykologi -->
+                <StackLayout x:Name="box_psykologi" IsVisible="false">
+                    <StackLayout Orientation="Horizontal">
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource Psykologi}" FontSize="30" Margin="0" Text="Psykologi" VerticalOptions="Start" HorizontalOptions="Start" />
+                    </StackLayout>
+                    <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
+                        <FlexLayout JustifyContent="SpaceAround" AlignContent="Start">
+                            <StackLayout Orientation="Horizontal" Margin="0" Padding="30,0,30,30"  >
+
+                                <Button StyleClass="icon" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Anatomi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                                    <Button.Image>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_psy1.png" Android="icons/icon_psy1.png"></OnPlatform>
+                                    </Button.Image>
+                                </Button>
+                                <Button StyleClass="icon" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Fysiologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
+                                    <Button.Image>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_psy2.png" Android="icons/icon_psy2.png"></OnPlatform>
+                                    </Button.Image>
+                                </Button>
+                            </StackLayout>
+                        </FlexLayout>
+                    </ScrollView>
+                </StackLayout>
+
+                <!-- Pædagogik -->
+                <StackLayout x:Name="box_pædagogik" IsVisible="false">
+                    <StackLayout Orientation="Horizontal">
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource Pædagogik}" FontSize="30" Margin="0" Text="Pædagogik" VerticalOptions="Start" HorizontalOptions="Start" />
+                    </StackLayout>
+                    <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
+                        <FlexLayout JustifyContent="SpaceAround" AlignContent="Start">
+                            <StackLayout Orientation="Horizontal" Margin="0" Padding="30,0,30,30"  >
+
+                                <Button StyleClass="icon" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Anatomi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                                    <Button.Image>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_pad1.png" Android="icons/icon_pad1.png"></OnPlatform>
+                                    </Button.Image>
+                                </Button>
+                                <Button StyleClass="icon" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Fysiologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
+                                    <Button.Image>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_pad2.png" Android="icons/icon_pad2.png"></OnPlatform>
+                                    </Button.Image>
+                                </Button>
+                            </StackLayout>
+                        </FlexLayout>
+                    </ScrollView>
+                </StackLayout>
+
+                <!-- Ergoterapi -->
+                <StackLayout x:Name="box_ergoterapi" IsVisible="false">
+                    <StackLayout Orientation="Horizontal">
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource Ergoterapi}" FontSize="30" Margin="0" Text="Ergoterapi" VerticalOptions="Start" HorizontalOptions="Start" />
+                    </StackLayout>
+                    <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
+                        <FlexLayout JustifyContent="SpaceAround" AlignContent="Start">
+                            <StackLayout Orientation="Horizontal" Margin="0" Padding="30,0,30,30"  >
+
+                                <Button StyleClass="icon" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Anatomi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                                    <Button.Image>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_erg1.png" Android="icons/icon_erg1.png"></OnPlatform>
+                                    </Button.Image>
+                                </Button>
+                                <Button StyleClass="icon" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Fysiologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
+                                    <Button.Image>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_erg2.png" Android="icons/icon_erg2.png"></OnPlatform>
+                                    </Button.Image>
+                                </Button>
+                            </StackLayout>
+                        </FlexLayout>
+                    </ScrollView>
+                </StackLayout>
+
+                <!-- Sygdomslære -->
+                <StackLayout x:Name="box_sygdomslære" IsVisible="false">
+                    <StackLayout Orientation="Horizontal">
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource Sygdomslære}" FontSize="30" Margin="0" Text="Sygdomslære" VerticalOptions="Start" HorizontalOptions="Start" />
+                    </StackLayout>
+                    <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
+                        <FlexLayout JustifyContent="SpaceAround" AlignContent="Start">
+                            <StackLayout Orientation="Horizontal" Margin="0" Padding="30,0,30,30"  >
+
+                                <Button StyleClass="icon" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Anatomi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                                    <Button.Image>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_syg1.png" Android="icons/icon_syg1.png"></OnPlatform>
+                                    </Button.Image>
+                                </Button>
+                                <Button StyleClass="icon" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Fysiologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
+                                    <Button.Image>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_syg2.png" Android="icons/icon_syg2.png"></OnPlatform>
+                                    </Button.Image>
+                                </Button>
+                            </StackLayout>
+                        </FlexLayout>
+                    </ScrollView>
+                </StackLayout>
+
+
+
+
+
+            </StackLayout>
+        </Grid>
     </StackLayout>
 </ContentPage>

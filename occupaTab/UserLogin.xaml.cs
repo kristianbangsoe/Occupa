@@ -27,6 +27,12 @@ namespace occupaTab
             }
         }
 
+        public async void HandleForgotPass(object sender, EventArgs e)
+        {
+            var MainPage = new UserForgotPass();
+            await Navigation.PushModalAsync(MainPage);
+        }
+
     }
 }
 

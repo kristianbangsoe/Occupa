@@ -27,50 +27,34 @@
     </ContentPage.Resources>
     <ContentPage.Content>
    
-        <StackLayout>
-            <!-- <FlexLayout JustifyContent="SpaceAround" BackgroundColor="{StaticResource Primary}">
-                <StackLayout Orientation="Horizontal" Margin="20,20,25,20">
-                    <Image WidthRequest="100" Margin="0,20,0,0" Source="logo.png"></Image> 
-                </StackLayout>
+        <StackLayout Margin="0" BackgroundColor="{StaticResource Accent}">
+            <FlexLayout JustifyContent="SpaceAround">
+                <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" ColumnSpacing="0" WidthRequest="800">
                     
-                <Entry HeightRequest="45" WidthRequest="400" FlexLayout.AlignSelf="Center" Placeholder="Søg efter øvelser...">
-                        <Entry.Keyboard>
-                        <Keyboard x:FactoryMethod="Create">
-                            <x:Arguments>
-                                <KeyboardFlags>Suggestions,CapitalizeCharacter</KeyboardFlags>
-                            </x:Arguments>
-                        </Keyboard>
-                    </Entry.Keyboard>
-                </Entry>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80*" />
+                    </Grid.ColumnDefinitions>
                     
-                <FlexLayout WidthRequest="300" JustifyContent="SpaceAround">
-                    <Button WidthRequest="100" Margin="0,25,0,0" HeightRequest="25" TextColor="White" Clicked="AddItem_Clicked" Text="Ny note +">
-                     
-                    </Button>
-                     <Button WidthRequest="25" HeightRequest="25" Margin="0,25,0,0" x:Name="btn_notes" Image="list.png">
-                        <Button.Image>
-                            <OnPlatform x:TypeArguments="FileImageSource" iOS="list.png" Android="list.png"></OnPlatform>
-                        </Button.Image>
-                    </Button>
-                    <StackLayout Orientation="Horizontal">
-                        <Image WidthRequest="30" Margin="20,0,0,0" Source="profile.png"></Image>
-                        <Label Margin="5,30,0,0" TextColor="White" Text="Louise C."></Label>    
-                    </StackLayout>
-                </FlexLayout> 
-                    
-          </FlexLayout>-->
-            <ListView x:Name="ItemsListView" ItemsSource="{Binding Items}" VerticalOptions="FillAndExpand" HasUnevenRows="true" RefreshCommand="{Binding LoadItemsCommand}" IsPullToRefreshEnabled="true" IsRefreshing="{Binding IsBusy, Mode=OneWay}" CachingStrategy="RecycleElement" ItemSelected="OnItemSelected">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Padding="10">
-                                <Label Text="{Binding Text}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" />
-                                <Label Text="{Binding Description}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemDetailTextStyle}" FontSize="13" />
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>
+                    <Label Grid.Column="0" Grid.Row="0" Margin="00,30,0,30" TextColor="{StaticResource LightTextColor}" FontSize="30" Text="Mine noter"></Label>
+                    <ListView Grid.Column="0" Grid.Row="1" x:Name="ItemsListView" ItemsSource="{Binding Items}" VerticalOptions="FillAndExpand" HasUnevenRows="true" RefreshCommand="{Binding LoadItemsCommand}" IsPullToRefreshEnabled="true" IsRefreshing="{Binding IsBusy, Mode=OneWay}" CachingStrategy="RecycleElement" ItemSelected="OnItemSelected">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Padding="10">
+                                        <Label Text="{Binding Text}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" />
+                                        <Label Text="{Binding Description}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemDetailTextStyle}" FontSize="13" />
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </FlexLayout> 
+       </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>

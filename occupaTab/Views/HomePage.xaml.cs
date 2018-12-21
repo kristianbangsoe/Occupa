@@ -82,8 +82,8 @@ namespace occupaTab.Views
 
         private async void clicked_btn_anatomi(object sender, EventArgs e)
         {
-            var UserLogin = new UserLogin();
-            await Navigation.PushModalAsync(UserLogin);
+            var Exericise_Anatomi = new Exericise_Anatomi();
+            await Navigation.PushModalAsync(Exericise_Anatomi);
         }
 
 

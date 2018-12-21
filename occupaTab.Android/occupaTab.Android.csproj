@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -84,6 +84,7 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
     <AndroidResource Include="Resources\drawable\heart.png" />
+<<<<<<< HEAD:occupaTab.Android/occupaTab.Android.csproj
     <AndroidResource Include="Resources\drawable\note.png" />
     <AndroidResource Include="Resources\drawable\roc.png" />
     <AndroidResource Include="Resources\drawable\icon_1.png" />
@@ -94,13 +95,17 @@
     <AndroidResource Include="Resources\drawable\icon_6.png" />
     <AndroidResource Include="Resources\drawable\icon_7.png" />
     <AndroidResource Include="Resources\drawable\icon_8.png" />
+=======
+    <AndroidResource Include="Resources\drawable\list.png" />
+    <AndroidResource Include="Resources\drawable\profile.png" />
+    <AndroidResource Include="Resources\drawable\search.png" />
+>>>>>>> 4f9d5531787aa4842335f7ee35098c271c9978a0:Occupa.Android/Occupa.Android.csproj
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable-hdpi\" />
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
-    <Folder Include="Resources\drawable\icons\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\occupaTab\occupaTab.csproj">
@@ -108,5 +113,65 @@
       <Name>occupaTab</Name>
     </ProjectReference>
   </ItemGroup>
- <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_ana1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_ana2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_erg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_erg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_fys1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_fys2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_pad1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_pad2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_psy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_psy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_syg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon_syg2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

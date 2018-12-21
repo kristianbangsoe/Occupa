@@ -138,10 +138,34 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD:occupaTab.iOS/occupaTab.iOS.csproj
     <Folder Include="Resources\icons\" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork%402x" />
+=======
+    <BundleResource Include="Resources\logo.png" />
+    <BundleResource Include="Resources\nav.png" />
+    <BundleResource Include="Resources\heart.png" />
+    <BundleResource Include="Resources\list.png" />
+    <BundleResource Include="Resources\profile.png" />
+    <BundleResource Include="Resources\search.png" />
+    <BundleResource Include="Resources\icons\icon_1.png" />
+    <BundleResource Include="Resources\icons\icon_2.png" />
+    <BundleResource Include="Resources\icons\icon_3.png" />
+    <BundleResource Include="Resources\icons\icon_4.png" />
+    <BundleResource Include="Resources\icons\icon_5.png" />
+    <BundleResource Include="Resources\icons\icon_6.png" />
+    <BundleResource Include="Resources\icons\icon_7.png" />
+    <BundleResource Include="Resources\icons\icon_8.png" />
+    <BundleResource Include="Resources\hook.png" />
+    <BundleResource Include="Resources\backgrounds\UserLogin.png" />
+    <BundleResource Include="Resources\backgrounds\UserLoginReset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\icons\" />
+    <Folder Include="Resources\backgrounds\" />
+>>>>>>> 4f9d5531787aa4842335f7ee35098c271c9978a0:Occupa.iOS/Occupa.iOS.csproj
   </ItemGroup>
 </Project>

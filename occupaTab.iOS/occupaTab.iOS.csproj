@@ -85,9 +85,7 @@
     <BundleResource Include="Resources\xamarin_logo%402x.png" />
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
-    <BundleResource Include="Resources\heart.png" />
     <BundleResource Include="Resources\note.png" />
-    <BundleResource Include="Resources\roc.png" />
     <BundleResource Include="Resources\icons\icon_1.png" />
     <BundleResource Include="Resources\icons\icon_2.png" />
     <BundleResource Include="Resources\icons\icon_3.png" />
@@ -96,7 +94,6 @@
     <BundleResource Include="Resources\icons\icon_6.png" />
     <BundleResource Include="Resources\icons\icon_7.png" />
     <BundleResource Include="Resources\icons\icon_8.png" />
-    <BundleResource Include="Resources\profile.png" />
     <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-fav.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%402x.png" />
@@ -144,7 +141,6 @@
     <BundleResource Include="Resources\logo.png" />
     <BundleResource Include="Resources\heart.png" />
     <BundleResource Include="Resources\profile.png" />
-    <BundleResource Include="Resources\search.png" />
     <BundleResource Include="Resources\icons\icon_1.png" />
     <BundleResource Include="Resources\icons\icon_2.png" />
     <BundleResource Include="Resources\icons\icon_3.png" />

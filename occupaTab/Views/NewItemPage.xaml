@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage BackgroundColor="#F7F7F7" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="occupaTab.Views.NewItemPage" Title="Ny Note">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Annuller" Clicked="Cancel_Clicked" />
+        <ToolbarItem Text="Save" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="Navn på note" FontSize="Medium" />
+            <Entry BackgroundColor="White" Placeholder="Titel på note" Text="{Binding Item.Text}" FontSize="Small" />
+            <Label Text="Note" FontSize="Medium" />
+            <Frame BorderColor="#E0E0E0" HasShadow="false">
+                <Editor x:Name="med" Text="{Binding Item.Description}" FontSize="Small" Margin="0" />
+             </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

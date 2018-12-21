@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="occupaTab.Views.ItemsPage" Title="{Binding Title}" x:Name="BrowseItemsPage">
+    
+  <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Tilføj note" Clicked="AddItem_Clicked">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="note.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+     <ContentPage.Resources>
+        <ResourceDictionary>
+            <!--Global Styles-->
+            <Color x:Key="NavigationPrimary">#2196F3</Color>
+                <!--Page Level Resources: Compatibile with Xamarin Live Player -->
+            <Color x:Key="Primary">#26A69A</Color>
+            <Color x:Key="Accent">#F7F7F7</Color>
+            <Color x:Key="Border">#EDEDED</Color>
+            <Color x:Key="LightTextColor">#999999</Color>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <Setter Property="BarTextColor" Value="White" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+   
+        <StackLayout>
+            <!-- <FlexLayout JustifyContent="SpaceAround" BackgroundColor="{StaticResource Primary}">
+                <StackLayout Orientation="Horizontal" Margin="20,20,25,20">
+                    <Image WidthRequest="100" Margin="0,20,0,0" Source="logo.png"></Image> 
+                </StackLayout>
+                    
+                <Entry HeightRequest="45" WidthRequest="400" FlexLayout.AlignSelf="Center" Placeholder="Søg efter øvelser...">
+                        <Entry.Keyboard>
+                        <Keyboard x:FactoryMethod="Create">
+                            <x:Arguments>
+                                <KeyboardFlags>Suggestions,CapitalizeCharacter</KeyboardFlags>
+                            </x:Arguments>
+                        </Keyboard>
+                    </Entry.Keyboard>
+                </Entry>
+                    
+                <FlexLayout WidthRequest="300" JustifyContent="SpaceAround">
+                    <Button WidthRequest="100" Margin="0,25,0,0" HeightRequest="25" TextColor="White" Clicked="AddItem_Clicked" Text="Ny note +">
+                     
+                    </Button>
+                     <Button WidthRequest="25" HeightRequest="25" Margin="0,25,0,0" x:Name="btn_notes" Image="list.png">
+                        <Button.Image>
+                            <OnPlatform x:TypeArguments="FileImageSource" iOS="list.png" Android="list.png"></OnPlatform>
+                        </Button.Image>
+                    </Button>
+                    <StackLayout Orientation="Horizontal">
+                        <Image WidthRequest="30" Margin="20,0,0,0" Source="profile.png"></Image>
+                        <Label Margin="5,30,0,0" TextColor="White" Text="Louise C."></Label>    
+                    </StackLayout>
+                </FlexLayout> 
+                    
+          </FlexLayout>-->
+            <ListView x:Name="ItemsListView" ItemsSource="{Binding Items}" VerticalOptions="FillAndExpand" HasUnevenRows="true" RefreshCommand="{Binding LoadItemsCommand}" IsPullToRefreshEnabled="true" IsRefreshing="{Binding IsBusy, Mode=OneWay}" CachingStrategy="RecycleElement" ItemSelected="OnItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10">
+                                <Label Text="{Binding Text}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" />
+                                <Label Text="{Binding Description}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemDetailTextStyle}" FontSize="13" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

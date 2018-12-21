@@ -148,10 +148,10 @@
     <BundleResource Include="Resources\search.png" />
     <BundleResource Include="Resources\home.png" />
     <BundleResource Include="Resources\user.png" />
-    <BundleResource Include="Resources\Icon-60.png" />
     <InterfaceDefinition Include="Resources\en.lproj\LaunchScreen.storyboard" />
     <BundleResource Include="Resources\user_1.png" />
     <BundleResource Include="Resources\key.png" />
+    <BundleResource Include="Resources\Icon_60.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

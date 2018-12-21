@@ -15,13 +15,14 @@ namespace occupaTab
 
 
             MainPage = new UserLogin();
-            //MainPage = new MainPage();
+         
 
         }
 
         protected override void OnStart()
         {
             // Handle when your app starts
+
         }
 
         protected override void OnSleep()

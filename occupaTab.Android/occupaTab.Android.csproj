@@ -84,7 +84,6 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
     <AndroidResource Include="Resources\drawable\heart.png" />
-<<<<<<< HEAD:occupaTab.Android/occupaTab.Android.csproj
     <AndroidResource Include="Resources\drawable\note.png" />
     <AndroidResource Include="Resources\drawable\roc.png" />
     <AndroidResource Include="Resources\drawable\icon_1.png" />
@@ -95,11 +94,6 @@
     <AndroidResource Include="Resources\drawable\icon_6.png" />
     <AndroidResource Include="Resources\drawable\icon_7.png" />
     <AndroidResource Include="Resources\drawable\icon_8.png" />
-=======
-    <AndroidResource Include="Resources\drawable\list.png" />
-    <AndroidResource Include="Resources\drawable\profile.png" />
-    <AndroidResource Include="Resources\drawable\search.png" />
->>>>>>> 4f9d5531787aa4842335f7ee35098c271c9978a0:Occupa.Android/Occupa.Android.csproj
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable-hdpi\" />

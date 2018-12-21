@@ -41,5 +41,7 @@
                 <views:HomePage BackgroundColor="#F7F7F7" />
             </x:Arguments>
         </NavigationPage>
+
+        
     </TabbedPage.Children>
 </TabbedPage>

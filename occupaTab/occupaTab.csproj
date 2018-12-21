@@ -22,7 +22,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Update="Views\Exericise_Anatomi.xaml">
+    <EmbeddedResource Update="Views\Exercise_anatomi.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

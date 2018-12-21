@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace occupaTab.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Exericise_Anatomi : ContentPage
+	public partial class Exercise_anatomi : ContentPage
 	{
-		public Exericise_Anatomi ()
+		public Exercise_anatomi ()
 		{
 			InitializeComponent ();
 		}

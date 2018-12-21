@@ -9,12 +9,10 @@
             <Color x:Key="Primary">#26A69A</Color>
             <Color x:Key="Accent">#F7F7F7</Color>
             <Color x:Key="Border">#EDEDED</Color>
-            <Color x:Key="Anatomi">#FF7043</Color>
-            <Color x:Key="Fysiologi">#FF7043</Color>
-            <Color x:Key="Psykologi">#7E57C2</Color>
-            <Color x:Key="Pædagogik">#7E57C2</Color>
-            <Color x:Key="Ergoterapi">#66BB6A</Color>
-            <Color x:Key="Sygdomslære">#66BB6A</Color>
+            <Color x:Key="Sundhedsvidenskab">#66BB6A</Color>
+            <Color x:Key="Naturvidenskab">#FF7043</Color>
+            <Color x:Key="Samfundsvidenskab">#42A5F5</Color>
+            <Color x:Key="Humanistiskvidenskab">#7E57C2</Color>
             <Color x:Key="LightTextColor">#999999</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -77,16 +75,18 @@
         <StackLayout  BackgroundColor="White"  Grid.Row="2" Grid.Column="0" Padding="0,30,0,0">
           <!-- Anatomi -->
           <StackLayout x:Name="box_anatomi" IsVisible="false">
-            <StackLayout Orientation="Horizontal">
-              <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
-              <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
-              <Label TextColor="{StaticResource Anatomi}" FontSize="30" Margin="0" Text="Anatomi" VerticalOptions="Start" HorizontalOptions="Start" />
-            </StackLayout>
-            <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal" >
+                    <StackLayout Orientation="Horizontal">
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Naturvidenskab" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Anatomi" VerticalOptions="Start" HorizontalOptions="Start" />
+                    </StackLayout>
+                    <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal" >
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                 <StackLayout Spacing="10" Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
 
-                                <Button  StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_1.png">
+                                <Button Clicked="clicked_btn_anatomi" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_1.png">
                                     <Button.Image>
                                         <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_ana1.png" Android="icons/icon_ana1.png"></OnPlatform>
                                     </Button.Image>
@@ -105,10 +105,12 @@
           <!-- Fysiologi -->
           <StackLayout x:Name="box_fysiologi" IsVisible="false">
             <StackLayout Orientation="Horizontal">
-              <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
-              <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
-              <Label TextColor="{StaticResource Fysiologi}" FontSize="30" Margin="0" Text="Fysiologi" VerticalOptions="Start" HorizontalOptions="Start" />
-            </StackLayout>
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Naturvidenskab" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Fysiologi" VerticalOptions="Start" HorizontalOptions="Start" />
+                    </StackLayout>
             <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                 <StackLayout Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
@@ -132,10 +134,12 @@
           <!-- Psykologi -->
           <StackLayout x:Name="box_psykologi" IsVisible="false">
             <StackLayout Orientation="Horizontal">
-              <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
-              <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
-              <Label TextColor="{StaticResource Psykologi}" FontSize="30" Margin="0" Text="Psykologi" VerticalOptions="Start" HorizontalOptions="Start" />
-            </StackLayout>
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource Humanistiskvidenskab}" FontSize="30" Margin="0" Text="Humanistisk videnskab" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource Humanistiskvidenskab}" FontSize="30" Margin="0" Text="Psykologi" VerticalOptions="Start" HorizontalOptions="Start" />
+                    </StackLayout>
             <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                 <StackLayout Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
@@ -158,10 +162,12 @@
           <!-- Pædagogik -->
           <StackLayout x:Name="box_pædagogik" IsVisible="false">
             <StackLayout Orientation="Horizontal">
-              <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
-              <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
-              <Label TextColor="{StaticResource Pædagogik}" FontSize="30" Margin="0" Text="Pædagogik" VerticalOptions="Start" HorizontalOptions="Start" />
-            </StackLayout>
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource Humanistiskvidenskab}" FontSize="30" Margin="0" Text="Humanistisk videnskab" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource Humanistiskvidenskab}" FontSize="30" Margin="0" Text="Pædagogik" VerticalOptions="Start" HorizontalOptions="Start" />
+                    </StackLayout>
             <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                 <StackLayout Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
@@ -184,10 +190,12 @@
           <!-- Ergoterapi -->
           <StackLayout x:Name="box_ergoterapi" IsVisible="false">
             <StackLayout Orientation="Horizontal">
-              <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
-              <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
-              <Label TextColor="{StaticResource Ergoterapi}" FontSize="30" Margin="0" Text="Ergoterapi" VerticalOptions="Start" HorizontalOptions="Start" />
-            </StackLayout>
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource Sundhedsvidenskab}" FontSize="30" Margin="0" Text="Naturvidenskab" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource Sundhedsvidenskab}" FontSize="30" Margin="0" Text="Ergoterapi" VerticalOptions="Start" HorizontalOptions="Start" />
+                    </StackLayout>
             <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                 <StackLayout Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
@@ -210,10 +218,12 @@
           <!-- Sygdomslære -->
           <StackLayout x:Name="box_sygdomslære" IsVisible="false">
             <StackLayout Orientation="Horizontal">
-              <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
-              <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
-              <Label TextColor="{StaticResource Sygdomslære}" FontSize="30" Margin="0" Text="Sygdomslære" VerticalOptions="Start" HorizontalOptions="Start" />
-            </StackLayout>
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource Sundhedsvidenskab}" FontSize="30" Margin="0" Text="Naturvidenskab" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource Sundhedsvidenskab}" FontSize="30" Margin="0" Text="Sygdomslære" VerticalOptions="Start" HorizontalOptions="Start" />
+                    </StackLayout>
             <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                 <StackLayout Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >

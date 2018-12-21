@@ -115,12 +115,12 @@
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                 <StackLayout Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
 
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Anatomi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
                     <Button.Image>
                       <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_fys1.png"></OnPlatform>
                     </Button.Image>
                   </Button>
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Fysiologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
+                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
                     <Button.Image>
                       <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_4.png" Android="icons/icon_fys2.png"></OnPlatform>
                     </Button.Image>
@@ -144,12 +144,12 @@
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                 <StackLayout Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
 
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Anatomi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
                     <Button.Image>
                       <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_psy1.png"></OnPlatform>
                     </Button.Image>
                   </Button>
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Fysiologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
+                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
                     <Button.Image>
                       <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_4.png" Android="icons/icon_psy2.png"></OnPlatform>
                     </Button.Image>
@@ -172,12 +172,12 @@
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                 <StackLayout Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
 
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Anatomi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
                     <Button.Image>
                       <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_pad1.png"></OnPlatform>
                     </Button.Image>
                   </Button>
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Fysiologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
+                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
                     <Button.Image>
                       <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_4.png" Android="icons/icon_pad2.png"></OnPlatform>
                     </Button.Image>
@@ -200,12 +200,12 @@
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                 <StackLayout Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
 
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Anatomi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
                     <Button.Image>
                       <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_3.png"></OnPlatform>
                     </Button.Image>
                   </Button>
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Fysiologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
+                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
                     <Button.Image>
                       <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_4.png" Android="icons/icon_4.png"></OnPlatform>
                     </Button.Image>
@@ -228,12 +228,12 @@
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                 <StackLayout Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
 
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Anatomi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
                     <Button.Image>
                       <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_3.png"></OnPlatform>
                     </Button.Image>
                   </Button>
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" TextColor="Black" Text="Fysiologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
+                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
                     <Button.Image>
                       <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_4.png" Android="icons/icon_4.png"></OnPlatform>
                     </Button.Image>

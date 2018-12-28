@@ -60,6 +60,16 @@
                     <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
                     <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Muskler" VerticalOptions="Start" HorizontalOptions="Start" />
                 </StackLayout>
+                <ListView>
+                    <ListView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Øvelse 1: Kend dine knogler</x:String>
+                            <x:String>Øvelse 2: Synkeøvelse</x:String>
+                            <x:String>Øvelse 3: Fly en borger fra en stol til en seng</x:String>
+                        </x:Array>
+                    </ListView.ItemsSource>
+                </ListView>
+
             </StackLayout>
           
         </Grid>

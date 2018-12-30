@@ -35,12 +35,12 @@
                                 <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                                     <StackLayout Spacing="10" Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
 
-                            <Button Clicked="clicked_btn_anatomi_muskler" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Naturvidenskab}" CornerRadius="11" Image="icons/icon_1.png">
+                            <Button Clicked="Clicked_btn_anatomi_muskler" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Naturvidenskab}" CornerRadius="11" Image="icons/icon_1.png">
                                             <Button.Image>
                                                 <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_ana1.png" Android="icons/icon_ana1.png"></OnPlatform>
                                             </Button.Image>
                                         </Button>
-                            <Button Clicked="clicked_btn_anatomi_skelettet" StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand"  BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_2.png">
+                            <Button Clicked="Clicked_btn_anatomi_skelettet" StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand"  BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_2.png">
                                             <Button.Image>
                                                 <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_ana2.png" Android="icons/icon_ana2.png"></OnPlatform>
                                             </Button.Image>
@@ -60,15 +60,14 @@
                     <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
                     <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Muskler" VerticalOptions="Start" HorizontalOptions="Start" />
                 </StackLayout>
-                <ListView>
-                    <ListView.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Øvelse 1: Kend dine knogler</x:String>
-                            <x:String>Øvelse 2: Synkeøvelse</x:String>
-                            <x:String>Øvelse 3: Fly en borger fra en stol til en seng</x:String>
-                        </x:Array>
-                    </ListView.ItemsSource>
-                </ListView>
+
+
+                <StackLayout Margin="0" BackgroundColor="White" Grid.Row="2" Grid.Column="0">
+                    <Button WidthRequest="500" Text="Øvelse 2: Kend dine knogler&#x0a;19/12/2018" Clicked="Clicked_btn_anatomi_muskler_ex2"></Button>
+                    <Button WidthRequest="500" Text="Øvelse 1: Kend dine knogler&#x0a;18/12/2018" Clicked="Clicked_btn_anatomi_muskler_ex1"></Button>
+                </StackLayout>
+
+
 
             </StackLayout>
           

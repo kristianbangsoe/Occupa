@@ -13,7 +13,7 @@ The project seeks to help the occupational therapist students when they are doin
 ### On Mac
 
 * Make sure you have the latest version of Visual Studio and Xcode
-* Open the Occupa.sln in Visual Studio
+* Open the occupaTab.sln in Visual Studio
 * Make sure that Occupa.ios is set as startup project
 * Confirm that the debug is set to an iPad of your choice
 * Push the play button to build and run the application
@@ -21,7 +21,7 @@ The project seeks to help the occupational therapist students when they are doin
 ### On Windows
 
 * Make sure you have the latest version of Visual Studio and Android SDK
-* Open the Occupa.sln in Visual Studio
+* Open the occupaTab.sln in Visual Studio
 * Make sure that Occupa.Android is set as startup project
 * Confirm that the debug is set to an Android tablet of your choice
 * Push the play button to build and run the application

@@ -86,15 +86,6 @@
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <BundleResource Include="Resources\note.png" />
-    <BundleResource Include="Resources\icons\icon_1.png" />
-    <BundleResource Include="Resources\icons\icon_2.png" />
-    <BundleResource Include="Resources\icons\icon_3.png" />
-    <BundleResource Include="Resources\icons\icon_4.png" />
-    <BundleResource Include="Resources\icons\icon_5.png" />
-    <BundleResource Include="Resources\icons\icon_6.png" />
-    <BundleResource Include="Resources\icons\icon_7.png" />
-    <BundleResource Include="Resources\icons\icon_8.png" />
-
     <BundleResource Include="Resources\profile.png" />
     <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json">
       <Visible>false</Visible>
@@ -151,6 +142,26 @@
     <BundleResource Include="Resources\user_1.png" />
     <BundleResource Include="Resources\key.png" />
     <BundleResource Include="Resources\Icon_60.png" />
+    <BundleResource Include="Resources\icons\icon_1.png" />
+    <BundleResource Include="Resources\icons\icon_2.png" />
+    <BundleResource Include="Resources\icons\icon_3.png" />
+    <BundleResource Include="Resources\icons\icon_4.png" />
+    <BundleResource Include="Resources\icons\icon_5.png" />
+    <BundleResource Include="Resources\icons\icon_6.png" />
+    <BundleResource Include="Resources\icons\icon_7.png" />
+    <BundleResource Include="Resources\icons\icon_8.png" />
+    <BundleResource Include="Resources\icons\icon_ana1.png" />
+    <BundleResource Include="Resources\icons\icon_ana2.png" />
+    <BundleResource Include="Resources\icons\icon_erg1.png" />
+    <BundleResource Include="Resources\icons\icon_erg2.png" />
+    <BundleResource Include="Resources\icons\icon_fys1.png" />
+    <BundleResource Include="Resources\icons\icon_fys2.png" />
+    <BundleResource Include="Resources\icons\icon_pad1.png" />
+    <BundleResource Include="Resources\icons\icon_pad2.png" />
+    <BundleResource Include="Resources\icons\icon_psy1.png" />
+    <BundleResource Include="Resources\icons\icon_psy2.png" />
+    <BundleResource Include="Resources\icons\icon_syg1.png" />
+    <BundleResource Include="Resources\icons\icon_syg2.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -169,23 +180,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\icons\" />
-  </ItemGroup>
-  <ItemGroup>
     <BundleResource Include="Resources\logo.png" />
     <BundleResource Include="Resources\heart.png" />
     <BundleResource Include="Resources\profile.png" />
-    <BundleResource Include="Resources\icons\icon_1.png" />
-    <BundleResource Include="Resources\icons\icon_2.png" />
-    <BundleResource Include="Resources\icons\icon_3.png" />
-    <BundleResource Include="Resources\icons\icon_4.png" />
-    <BundleResource Include="Resources\icons\icon_5.png" />
-    <BundleResource Include="Resources\icons\icon_6.png" />
-    <BundleResource Include="Resources\icons\icon_7.png" />
-    <BundleResource Include="Resources\icons\icon_8.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\icons\" />
     <Folder Include="Resources\backgrounds\" />
   </ItemGroup>
 </Project>

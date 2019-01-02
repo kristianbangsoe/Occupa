@@ -40,5 +40,11 @@ namespace occupaTab.Views
             }
             // DisplayAlert("Tilføj til favoritter", "Tilføj til favoritter?", "Ok");
         }
+
+        private async void Clicked_btn_Mine_Noter(object sender, EventArgs e)
+        {
+            var mineNoter = new ItemsPage();
+            await Navigation.PushAsync(mineNoter);
+        }
     }
 }

@@ -87,7 +87,7 @@ Mauris interdum mauris sed fringilla fringilla.
                                             <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/Favorite.png" Android="icons/Favorite.png"></OnPlatform>
                                         </Button.Image>
                                     </Button>
-                                    <Button Margin="5" WidthRequest="100" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" Image="icons/Notes.png">
+                                    <Button Clicked="Clicked_btn_Mine_Noter" Margin="5" WidthRequest="100" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" Image="icons/Notes.png">
                                         <Button.Image>
                                             <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/Notes.png" Android="icons/Notes.png"></OnPlatform>
                                         </Button.Image>
@@ -114,7 +114,7 @@ Sed dictum, orci eu rutrum finibus, dolor enim commodo felis.
                                     </Label>
 
                                     <StackLayout Grid.ColumnSpan="2" Grid.Row="4" HorizontalOptions="End" Margin="0,0,0,0">
-                                        <Button HeightRequest="50" WidthRequest="200" BackgroundColor="{StaticResource ButtonBackground}" TextColor="{StaticResource ButtonText}" FontSize="16" FontAttributes="Bold" Text="Rediger Note" />
+                                            <Button Clicked="Clicked_btn_Mine_Noter"  HeightRequest="50" WidthRequest="200" BackgroundColor="{StaticResource ButtonBackground}" TextColor="{StaticResource ButtonText}" FontSize="16" FontAttributes="Bold" Text="Rediger Note" />
                                     </StackLayout>
                                 </StackLayout>
                             </StackLayout>

@@ -73,7 +73,7 @@ Mauris interdum mauris sed fringilla fringilla.
                                             <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/Quiz.png" Android="icons/Quiz.png"></OnPlatform>
                                         </Button.Image>
                                     </Button>
-                                    <Button Margin="5" WidthRequest="100" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" Image="icons/AskQuestion.png">
+                                    <Button Clicked="Clicked_btn_Anatomi_Muskler_Ask_Question" Margin="5" WidthRequest="100" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" Image="icons/AskQuestion.png">
                                         <Button.Image>
                                             <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/AskQuestion.png" Android="icons/AskQuestion.png"></OnPlatform>
                                         </Button.Image>

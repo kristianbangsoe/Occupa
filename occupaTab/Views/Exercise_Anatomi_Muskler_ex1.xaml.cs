@@ -16,5 +16,13 @@ namespace occupaTab.Views
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private async void Clicked_btn_Anatomi_Muskler_Ask_Question(object sender, EventArgs e)
+        {
+
+            var AskQuestion = new AskQuestion();
+            await Navigation.PushModalAsync(AskQuestion);
+
+        }
+    }
 }

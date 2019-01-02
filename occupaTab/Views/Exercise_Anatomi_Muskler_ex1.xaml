@@ -53,6 +53,7 @@
 
                             <StackLayout Grid.Row="0" Grid.Column="0" Margin="0" HorizontalOptions="FillAndExpand" BackgroundColor="White" Grid.RowSpan="2">
                                 <Image Margin="25" Source="icons/video_thumb.png" />
+                                <Label  Margin="25" TextColor="{StaticResource LightTextColor}">Lorem ipsum dolor sit amet.</Label>
                             </StackLayout>
                             <StackLayout Grid.Row="0" Grid.Column="1" HorizontalOptions="FillAndExpand"  BackgroundColor="White">
                                 <StackLayout Margin="30" HorizontalOptions="Start" Orientation="Horizontal">
@@ -80,7 +81,7 @@
                                 <StackLayout Grid.Row="3" Grid.Column="1" Margin="30" HorizontalOptions="FillAndExpand" BackgroundColor="White">
                                     <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,30,30,30" Text="Dine Noter" VerticalOptions="Center" HorizontalOptions="Start" />
                                     <Frame BorderColor="Silver" BackgroundColor="Silver" HasShadow="False" Padding="1" Margin="0,0,30,0">
-                                        <Editor Text="Lorem ipsum dolor sit amet,&#x0a; asda sd" HeightRequest="150" VerticalOptions="FillAndExpand"  HorizontalOptions="Fill"  BackgroundColor="{StaticResource Accent}"  TextColor="{StaticResource LightTextColor}" />
+                                        <Editor Text="Lorem ipsum dolor sit amet, asda sd" HeightRequest="150" VerticalOptions="FillAndExpand"  HorizontalOptions="Fill"  BackgroundColor="{StaticResource Accent}"  TextColor="{StaticResource LightTextColor}" />
                                     </Frame>
                                 </StackLayout>
                             </StackLayout>

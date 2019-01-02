@@ -12,7 +12,9 @@ namespace occupaTab.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Exercise_Anatomi_Muskler_ex1 : ContentPage
 	{
-		public Exercise_Anatomi_Muskler_ex1 ()
+        bool state = false;
+
+        public Exercise_Anatomi_Muskler_ex1 ()
 		{
 			InitializeComponent ();
 		}
@@ -23,6 +25,20 @@ namespace occupaTab.Views
             var AskQuestion = new AskQuestion();
             await Navigation.PushModalAsync(AskQuestion);
 
+        }
+        private  void Clicked_btn_Anatomi_Muskler_Add_as_Favorite(object sender, EventArgs e)
+        {
+            if (state)
+            {
+                state = false;
+                addToFavorite.Image = "Favorite.png";
+            }
+            else
+            {
+                state = true;
+                addToFavorite.Image = "Favorite_empty.png";
+            }
+            // DisplayAlert("Tilføj til favoritter", "Tilføj til favoritter?", "Ok");
         }
     }
 }

@@ -19,6 +19,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout Margin="0,0,0,0" BackgroundColor="{StaticResource Accent}">
             <Grid Margin="0" x:Name="alayout_container2" VerticalOptions="CenterAndExpand" BackgroundColor="{StaticResource Accent}">
                 <Grid.RowDefinitions>
@@ -61,6 +62,9 @@
                                     <Label.Text>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Praesent ut magna venenatis erat 
+Nunc bibendum est et lorem fringilla, a sagittis massa tincidunt.
+Sed non aliquam purus.
+Sed dictum, orci eu rutrum finibus, dolor enim commodo felis.
 malesuada imperdiet efficitur ac lorem.
 Mauris interdum mauris sed fringilla fringilla.
                                     </Label.Text>
@@ -78,7 +82,7 @@ Mauris interdum mauris sed fringilla fringilla.
                                             <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/AskQuestion.png" Android="icons/AskQuestion.png"></OnPlatform>
                                         </Button.Image>
                                     </Button>
-                                    <Button Margin="5" WidthRequest="100" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" Image="icons/Favorite.png">
+                                        <Button Clicked="Clicked_btn_Anatomi_Muskler_Add_as_Favorite" x:Name="addToFavorite" Margin="5" WidthRequest="100" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" Image="icons/Favorite.png">
                                         <Button.Image>
                                             <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/Favorite.png" Android="icons/Favorite.png"></OnPlatform>
                                         </Button.Image>
@@ -105,12 +109,12 @@ Vivamus ut neque eget urna maximus viverra sit amet vel felis.
 In interdum lacinia mi, ut lobortis justo tincidunt quis.
 Nunc bibendum est et lorem fringilla, a sagittis massa tincidunt.
 Sed non aliquam purus.
-Sed dictum, orci eu rutrum finibus, dolor enim commodo felis,
+Sed dictum, orci eu rutrum finibus, dolor enim commodo felis.
                                         </Label.Text>
                                     </Label>
 
-                                    <StackLayout Grid.ColumnSpan="2" Grid.Row="4" HorizontalOptions="Center" Margin="0,30,0,0">
-                                        <Button HeightRequest="50" WidthRequest="200" BackgroundColor="{StaticResource ButtonBackground}" TextColor="{StaticResource ButtonText}" FontSize="22" FontAttributes="Bold" Text="LOGIN" />
+                                    <StackLayout Grid.ColumnSpan="2" Grid.Row="4" HorizontalOptions="End" Margin="0,0,0,0">
+                                        <Button HeightRequest="50" WidthRequest="200" BackgroundColor="{StaticResource ButtonBackground}" TextColor="{StaticResource ButtonText}" FontSize="16" FontAttributes="Bold" Text="Rediger Note" />
                                     </StackLayout>
                                 </StackLayout>
                             </StackLayout>
@@ -119,10 +123,8 @@ Sed dictum, orci eu rutrum finibus, dolor enim commodo felis,
                     
                 </StackLayout>
 
-
-
             </Grid>
         </StackLayout>
-
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

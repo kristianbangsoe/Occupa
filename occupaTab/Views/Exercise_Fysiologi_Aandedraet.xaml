@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="occupaTab.Views.Exercise_Anatomi_Skelettet"
-             Title="Øvelser / Anatomi / Skelettet">
+             x:Class="occupaTab.Views.Exercise_Fysiologi_Aandedraet"
+             Title="Øvelser / Fysiologi / Åndedræt">
     <ContentPage.Resources>
         <ResourceDictionary>
             <!--Page Level Resources: Compatibile with Xamarin Live Player -->
@@ -36,14 +36,14 @@
                     <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                         <StackLayout Spacing="10" Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
 
-                            <Button Clicked="Clicked_btn_anatomi_muskler" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_1.png">
+                            <Button Clicked="Clicked_btn_Fysiologi_Åndedræt" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Naturvidenskab}" CornerRadius="11" Image="icons/icon_1.png">
                                 <Button.Image>
-                                    <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_ana1.png" Android="icons/icon_ana1.png"></OnPlatform>
+                                    <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_ana1.png" Android="icons/icon_fys1.png"></OnPlatform>
                                 </Button.Image>
                             </Button>
-                            <Button Clicked="Clicked_btn_anatomi_skelettet" StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand"  BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Naturvidenskab}" CornerRadius="11" Image="icons/icon_2.png">
+                            <Button Clicked="Clicked_btn_Fysiologi_Forplantning" StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand"  BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_2.png">
                                 <Button.Image>
-                                    <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_ana2.png" Android="icons/icon_ana2.png"></OnPlatform>
+                                    <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_ana2.png" Android="icons/icon_fys2.png"></OnPlatform>
                                 </Button.Image>
                             </Button>
                         </StackLayout>
@@ -57,13 +57,13 @@
                     <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
                     <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Naturvidenskab" VerticalOptions="Start" HorizontalOptions="Start" />
                     <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
-                    <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Anatomi" VerticalOptions="Start" HorizontalOptions="Start" />
+                    <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Fysiologi" VerticalOptions="Start" HorizontalOptions="Start" />
                     <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
-                    <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Skelettet" VerticalOptions="Start" HorizontalOptions="Start" />
+                    <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Åndedræt" VerticalOptions="Start" HorizontalOptions="Start" />
                 </StackLayout>
                 <StackLayout Margin="0" BackgroundColor="White" Grid.Row="2" Grid.Column="0">
-                    <Button WidthRequest="500" Text="Øvelse 2: Kend dine knogler&#x0a;19/12/2018" Clicked="Clicked_btn_anatomi_skelettet_ex2"></Button>
-                    <Button WidthRequest="500" Text="Øvelse 1: Kend dine knogler&#x0a;18/12/2018" Clicked="Clicked_btn_anatomi_skelettet_ex1"></Button>
+                    <Button WidthRequest="500" Text="Øvelse 2: Kend dine knogler&#x0a;19/12/2018" Clicked="Clicked_btn_Fysiologi_Åndedræt_ex2"></Button>
+                    <Button WidthRequest="500" Text="Øvelse 1: Kend dine knogler&#x0a;18/12/2018" Clicked="Clicked_btn_Fysiologi_Åndedræt_ex1"></Button>
                 </StackLayout>
             </StackLayout>
 

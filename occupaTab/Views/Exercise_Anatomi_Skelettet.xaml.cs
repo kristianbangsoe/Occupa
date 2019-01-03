@@ -16,16 +16,31 @@ namespace occupaTab.Views
 		{
 			InitializeComponent ();
 		}
-        private async void clicked_btn_anatomi_muskler(object sender, EventArgs e)
+        private async void Clicked_btn_anatomi_muskler(object sender, EventArgs e)
         {
             var Exercise_Anatomi_Muskler = new Exercise_Anatomi_Muskler();
             await Navigation.PushAsync(Exercise_Anatomi_Muskler);
         }
 
-        private async void clicked_btn_anatomi_skelettet(object sender, EventArgs e)
+        private async void Clicked_btn_anatomi_skelettet(object sender, EventArgs e)
         {
             var Exercise_Anatomi_Skelettet = new Exercise_Anatomi_Skelettet();
             await Navigation.PushAsync(Exercise_Anatomi_Skelettet);
+        }
+
+
+        private async void Clicked_btn_anatomi_skelettet_ex1(object sender, EventArgs e)
+        {
+
+            var Exercise_Anatomi_Skelettet_ex1 = new Exercise_Anatomi_Skelettet_ex1();
+            await Navigation.PushAsync(Exercise_Anatomi_Skelettet_ex1);
+
+        }
+        private async void Clicked_btn_anatomi_skelettet_ex2(object sender, EventArgs e)
+        {
+            var Exercise_Anatomi_Skelettet_ex2 = new Exercise_Anatomi_Skelettet_ex2();
+            await Navigation.PushAsync(Exercise_Anatomi_Skelettet_ex2);
+
         }
     }
 }

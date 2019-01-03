@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace occupaTab.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Quiz : ContentPage
+	public partial class Quiz_Anatomi_Muskler_ex1 : ContentPage
 	{
 
         Color forkert = Color.FromRgba(255, 0, 0, 0.5);
@@ -18,7 +18,7 @@ namespace occupaTab.Views
 
        
 
-        public Quiz ()
+        public Quiz_Anatomi_Muskler_ex1()
 		{
           
             InitializeComponent ();

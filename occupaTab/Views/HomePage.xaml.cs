@@ -92,9 +92,18 @@ namespace occupaTab.Views
             await Navigation.PushAsync(MainPage);
         }
 
+
         private async void Clicked_btn_fysiologi_åndedræt(object sender, EventArgs e)
         {
             var MainPage = new Exercise_Fysiologi_Aandedraet();
+            await Navigation.PushAsync(MainPage);
+        }
+
+
+
+        private async void Fav_clicked(object sender, EventArgs e)
+        {
+            var MainPage = new FavoritePage();
             await Navigation.PushAsync(MainPage);
         }
 

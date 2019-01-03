@@ -12,9 +12,10 @@ namespace occupaTab.Views
             InitializeComponent();
         }
 
-        async void AddItem_Clicked(object sender, EventArgs e)
+        public async void HandleLogout(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new NewItemPage()));
+            var MainPage = new UserLogin();
+            await Navigation.PushModalAsync(MainPage);
         }
     }
 }

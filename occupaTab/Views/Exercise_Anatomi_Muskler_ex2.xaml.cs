@@ -12,9 +12,43 @@ namespace occupaTab.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Exercise_Anatomi_Muskler_ex2 : ContentPage
 	{
-		public Exercise_Anatomi_Muskler_ex2 ()
+        bool state = false;
+        public Exercise_Anatomi_Muskler_ex2 ()
 		{
 			InitializeComponent ();
 		}
-	}
+        private async void Clicked_btn_Anatomi_Muskler_Ask_Question(object sender, EventArgs e)
+        {
+
+            var AskQuestion = new AskQuestion();
+            await Navigation.PushModalAsync(AskQuestion);
+
+        }
+        private void Clicked_btn_Anatomi_Muskler_Add_as_Favorite(object sender, EventArgs e)
+        {
+            if (state)
+            {
+                state = false;
+                addToFavorite.Image = "Favorite.png";
+            }
+            else
+            {
+                state = true;
+                addToFavorite.Image = "Favorite_empty.png";
+            }
+        }
+
+        private async void Clicked_btn_Mine_Noter(object sender, EventArgs e)
+        {
+            var mineNoter = new ItemsPage();
+            await Navigation.PushAsync(mineNoter);
+        }
+
+        private async void Clicked_btn_Quiz(object sender, EventArgs e)
+        {
+
+            var quiz = new Quiz();
+            await Navigation.PushAsync(quiz);
+        }
+    }
 }

@@ -22,7 +22,7 @@
     </ContentPage.Resources>
     <ContentPage.Content>
         <Grid>
-             <Image Aspect="AspectFill" x:Name="BGImageLogin" Source="BackgroundVectorColor.png" />
+            <Image Aspect="AspectFill" x:Name="BGImageLogin" Source="BackgroundVectorColor.png" />
             <ScrollView>      
                 <StackLayout  VerticalOptions="FillAndExpand">
                         

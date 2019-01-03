@@ -92,6 +92,12 @@ namespace occupaTab.Views
             await Navigation.PushAsync(MainPage);
         }
 
+        private async void Fav_clicked(object sender, EventArgs e)
+        {
+            var MainPage = new FavoritePage();
+            await Navigation.PushAsync(MainPage);
+        }
+
 
 
     }

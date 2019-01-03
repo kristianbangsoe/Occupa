@@ -68,6 +68,9 @@
     <AndroidResource Include="Resources\drawable\AskQuestionSent.png" />
     <AndroidResource Include="Resources\drawable\BackgroundVectorColor.png" />
     <AndroidResource Include="Resources\drawable\BackgroundVectorBW.png" />
+    <AndroidResource Include="Resources\drawable\red_heart.png" />
+    <AndroidResource Include="Resources\drawable\arrow_right.png" />
+    <AndroidResource Include="Resources\drawable\splash_screen.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Tabbar.axml" />
@@ -196,7 +199,7 @@
     <AndroidResource Include="Resources\drawable\user_1.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Icon_60.png" />
+    <AndroidResource Include="Resources\drawable\splash_logo.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\home.png" />

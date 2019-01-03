@@ -36,5 +36,10 @@
 	<string>Assets.xcassets/LaunchImage.launchimage</string>
 	<key>CFBundleName</key>
 	<string>Occupa</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

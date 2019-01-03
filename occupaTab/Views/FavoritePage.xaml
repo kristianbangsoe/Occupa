@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="occupaTab.Views.FavoritePage">
+    <ContentPage.Content>
+        <StackLayout Margin="0" BackgroundColor="{StaticResource Accent}">
+            <FlexLayout JustifyContent="SpaceAround">
+                <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" ColumnSpacing="0" WidthRequest="800">
+                    
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80*" />
+                    </Grid.ColumnDefinitions>
+                    
+                    <Label Grid.Column="0" Grid.Row="0" Margin="00,30,0,0" TextColor="{StaticResource LightTextColor}" FontSize="30" Text="Mine Favoritter"></Label>
+                    <ListView SeparatorVisibility="None" BackgroundColor="Transparent" Grid.Column="0" Grid.Row="1" x:Name="myList" VerticalOptions="FillAndExpand" HasUnevenRows="true" ItemSelected="OnItemSelected">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <!-- Here we make a Horizontal orientation with the help of StackLayout-->
+                                    <Frame CornerRadius="8" BorderColor="#E0E0E0" HasShadow="false" BackgroundColor="White" Margin="0,20,0,0">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Image Source="red_heart.png" WidthRequest="35" HeightRequest="35" Margin="0,0,15,0" Aspect="AspectFit" />
+                                            <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="Center">
+                                                <Label LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}" Text="{Binding Category}" />
+                                                 <Label LineBreakMode="NoWrap" WidthRequest="300" FontSize="Medium" Style="{DynamicResource ListItemTextStyle}" Text="{Binding Description}" TextColor="{StaticResource LightTextColor}" />
+                                            </StackLayout>
+                                            <FlexLayout AlignItems="Center" JustifyContent="SpaceBetween" Direction="Row" WidthRequest="130">
+                                                <Label LineBreakMode="NoWrap" FontSize="Medium" Style="{DynamicResource ListItemTextStyle}" Text="{Binding FavDate}" TextColor="{StaticResource LightTextColor}" />
+                                                <Image Source="arrow_right.png" WidthRequest="20" HeightRequest="30" Margin="15,0,0,0" Aspect="AspectFit" />        
+                                            </FlexLayout>
+                                        </StackLayout>
+                                    </Frame>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    
+                    
+                </Grid>
+                 <!-- Activity Indicator-->
+                <ActivityIndicator VerticalOptions="Center" IsVisible="false" HorizontalOptions="Center" x:Name="activity_indicator" Color="#4D7EE1" />
+            </FlexLayout> 
+       </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

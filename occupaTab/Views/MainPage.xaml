@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:occupaTab.Views" x:Class="occupaTab.Views.MainPage">
     <TabbedPage.Children>
-       <NavigationPage Title="Hjem">
-              <NavigationPage.BarBackgroundColor>
+       <!--HOME--> 
+        <NavigationPage Title="Hjem">
+            <NavigationPage.BarBackgroundColor>
                 </NavigationPage.BarBackgroundColor>
                  
             <NavigationPage.Icon>
@@ -14,7 +15,8 @@
                 <views:HomePage />
             </x:Arguments>
         </NavigationPage>
-         <NavigationPage Title="Mine noter">
+        <!--NOTES-->
+        <NavigationPage Title="Noter">
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="note.png" />
@@ -24,6 +26,7 @@
                 <views:ItemsPage BackgroundColor="#F7F7F7" />
             </x:Arguments>
         </NavigationPage>
+        <!--SEARCH-->
         <NavigationPage Title="Find øvelser">
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
@@ -34,14 +37,15 @@
                 <views:HomePage />
             </x:Arguments>
         </NavigationPage>
-        <NavigationPage Title="Bruger">
+        <!--USER PROFILE-->
+        <NavigationPage Title="Profil">
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="user.png" />
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>
-                <views:HomePage BackgroundColor="#F7F7F7" />
+                <views:UserProfile />
             </x:Arguments>
         </NavigationPage>
 

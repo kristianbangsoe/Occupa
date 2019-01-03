@@ -46,7 +46,7 @@
                                 </StackLayout> 
                                 
                                 <!--ENTRY FIELD-->
-                                <StackLayout Grid.Row="1" Grid.Column="0" >
+                                <StackLayout Grid.Row="1" Grid.Column="0" BackgroundColor="White">
                                     <Entry x:Name="EntryEmail" Text="" HeightRequest="360" Placeholder="Skriv dit spørgsmål her" HorizontalTextAlignment="Center" />    
                                 </StackLayout> 
                                 

@@ -32,43 +32,43 @@
           <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal" >
             <StackLayout Orientation="Horizontal" Spacing="10" Margin="0" Padding="30,0,30,30">
                         
-              <Button Clicked="clicked_anatomi" WidthRequest="200" HeightRequest="200" StyleClass="icon" ContentLayout="Top,0" Margin="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" TextColor="Black" Text="Anatomi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_1.png">
+              <Button Clicked="Clicked_anatomi" WidthRequest="200" HeightRequest="200" StyleClass="icon" ContentLayout="Top,0" Margin="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" TextColor="Black" Text="Anatomi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_1.png">
                 <Button.Image>
                   <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_1.png" Android="icons/icon_1.png"></OnPlatform>
                 </Button.Image>         
               </Button>
                         
-              <Button Clicked="clicked_fysiologi" WidthRequest="200" HeightRequest="200" StyleClass="icon" ContentLayout="Top,0" Margin="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" TextColor="Black" Text="Fysiologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_2.png">
+              <Button Clicked="Clicked_fysiologi" WidthRequest="200" HeightRequest="200" StyleClass="icon" ContentLayout="Top,0" Margin="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" TextColor="Black" Text="Fysiologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_2.png">
                 <Button.Image>
                   <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_2.png" Android="icons/icon_2.png"></OnPlatform>
                 </Button.Image>
               </Button>
                         
-              <Button Clicked="clicked_psykologi" WidthRequest="200" HeightRequest="200" StyleClass="icon" ContentLayout="Top,0" Margin="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" TextColor="Black" Text="Psykologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_1.png">
+              <Button Clicked="Clicked_psykologi" WidthRequest="200" HeightRequest="200" StyleClass="icon" ContentLayout="Top,0" Margin="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" TextColor="Black" Text="Psykologi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_1.png">
                 <Button.Image>
                   <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_3.png"></OnPlatform>
                 </Button.Image>
               </Button>
                         
-              <Button Clicked="clicked_pædagogik" WidthRequest="200" HeightRequest="200" StyleClass="icon" ContentLayout="Top,0" Margin="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" TextColor="Black" Text="Pædagogik" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
+              <Button Clicked="Clicked_pædagogik" WidthRequest="200" HeightRequest="200" StyleClass="icon" ContentLayout="Top,0" Margin="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" TextColor="Black" Text="Pædagogik" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
                 <Button.Image>
                   <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_4.png" Android="icons/icon_4.png"></OnPlatform>
                 </Button.Image>
               </Button>                   
                         
-              <Button Clicked="clicked_ergoterapi" WidthRequest="200" HeightRequest="200" StyleClass="icon" ContentLayout="Top,0" Margin="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" TextColor="Black" Text="Ergoterapi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_5.png">
+              <Button Clicked="Clicked_ergoterapi" WidthRequest="200" HeightRequest="200" StyleClass="icon" ContentLayout="Top,0" Margin="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" TextColor="Black" Text="Ergoterapi" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_5.png">
                 <Button.Image>
                   <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_5.png" Android="icons/icon_5.png"></OnPlatform>
                 </Button.Image>
                 
               </Button>
-              <Button Margin="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Clicked="clicked_sygdomslære" WidthRequest="200" HeightRequest="200" StyleClass="icon" ContentLayout="Top,0" TextColor="Black" Text="Sygdomslære" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_7.png">
-                <Button.Image>
-                  <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_7.png" Android="icons/icon_7.png"></OnPlatform>
-                </Button.Image>
-              </Button>
-                        
-            </StackLayout>
+                <Button Clicked="Clicked_sygdomslære" Margin="0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" WidthRequest="200" HeightRequest="200" StyleClass="icon" ContentLayout="Top,0" TextColor="Black" Text="Sygdomslære" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_7.png">
+                    <Button.Image>
+                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_7.png" Android="icons/icon_7.png"></OnPlatform>
+                    </Button.Image>
+                </Button>
+
+                    </StackLayout>
           </ScrollView>
         </StackLayout>
 
@@ -82,16 +82,16 @@
                         <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Anatomi" VerticalOptions="Start" HorizontalOptions="Start" />
                     </StackLayout>
-                    <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal" >
+                    <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
-                <StackLayout Spacing="10" Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
+                <StackLayout Spacing="10" Orientation="Horizontal" Margin="0" Padding="30,20,30,30">
 
-                                <Button Clicked="clicked_btn_anatomi_muskler" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_1.png">
+                                <Button Clicked="Clicked_btn_anatomi_muskler" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_1.png">
                                     <Button.Image>
                                         <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_ana1.png" Android="icons/icon_ana1.png"></OnPlatform>
                                     </Button.Image>
                                 </Button>
-                                <Button Clicked="clicked_btn_anatomi_skelettet" StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand"  BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_2.png">
+                                <Button Clicked="Clicked_btn_anatomi_skelettet" StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand"  BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_2.png">
                                     <Button.Image>
                                         <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_ana2.png" Android="icons/icon_ana2.png"></OnPlatform>
                                     </Button.Image>

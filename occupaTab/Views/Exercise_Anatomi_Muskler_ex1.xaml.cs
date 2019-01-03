@@ -38,7 +38,6 @@ namespace occupaTab.Views
                 state = true;
                 addToFavorite.Image = "Favorite_empty.png";
             }
-            // DisplayAlert("Tilføj til favoritter", "Tilføj til favoritter?", "Ok");
         }
 
         private async void Clicked_btn_Mine_Noter(object sender, EventArgs e)

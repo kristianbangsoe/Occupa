@@ -16,6 +16,7 @@
             <Color x:Key="Humanistiskvidenskab">#7E57C2</Color>
             <Color x:Key="LightTextColor">#999999</Color>
             <Color x:Key="MediumTextColor">#707070</Color>
+            <Color x:Key="LinkTextColor">#0000FF</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
     
@@ -28,7 +29,7 @@
                 <FlexLayout WidthRequest="800">
                     <!--LEFT SIDE-->
                     <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Padding="10">
-                        <Button Margin="0,50,0,0" WidthRequest="475">
+                        <Button Margin="0,50,0,0" WidthRequest="475" BackgroundColor="White">
                             <Button.Image> 
                                 <OnPlatform x:TypeArguments="FileImageSource" iOS="profile1.png" Android="profile.png" ></OnPlatform>
                             </Button.Image>  
@@ -74,20 +75,36 @@
             <StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="White">
                 <FlexLayout Direction="Column" WidthRequest="800">
                     <!--LEFT SIDE-->
-                    <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" >
-                        <Label HorizontalOptions="Start" TextColor="{StaticResource LightTextColor}" FontSize="20" FontAttributes="Bold" Text="Indstillinger"/>
+                    <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
+                        <Label HorizontalOptions="Start" TextColor="{StaticResource LightTextColor}" FontSize="25" FontAttributes="Bold" Text="Indstillinger"/>
                     </Frame>
                         
-                    <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" >
+                    <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
                         <StackLayout Orientation="Horizontal">     
-                            <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource LightTextColor}" FontSize="20" FontAttributes="Bold" Text="Email til viderestilling"/>
+                            <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource LinkTextColor}" FontSize="20" Text="Email til viderestilling"/>
                             <Label  TextColor="{StaticResource LightTextColor}" FontSize="15" Text="louise.camembert@gmail.com"/>
                         </StackLayout>
                     </Frame>    
                                 
-                    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Padding="10">
+                    <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
+                        <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource LinkTextColor}" FontSize="20" Text="Skift adgangskode"/>
+                    </Frame>
                         
-                    </StackLayout>
+                    <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
+                        <StackLayout Orientation="Horizontal">     
+                            <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource LightTextColor}" FontSize="20" Text="Tofaktorgodkendelse"/>
+                            <Switch IsToggled="false" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand"></Switch>
+                        </StackLayout>
+                    </Frame> 
+                        
+                    <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
+                        <StackLayout Orientation="Horizontal">     
+                            <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource LightTextColor}" FontSize="20" Text="Anonymitet"/>
+                            <Switch IsToggled="true" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand"></Switch>
+                        </StackLayout>
+                    </Frame> 
+                        
+                    
                     
                     <!--RIGHT SIDE-->
                     

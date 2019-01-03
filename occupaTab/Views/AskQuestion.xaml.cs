@@ -16,5 +16,17 @@ namespace occupaTab.Views
 		{
 			InitializeComponent ();
 		}
+
+        public async void HandleCancel(object sender, EventArgs e)
+        {
+            var MainPage = new AskQuestion();
+            await Navigation.PushModalAsync(MainPage);
+        }
+
+        public async void HandleSendQuestion(object sender, EventArgs e)
+        {
+            var MainPage = new AskQuestion();
+            await Navigation.PushModalAsync(MainPage);
+        }
 	}
 }

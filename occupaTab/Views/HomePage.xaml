@@ -72,11 +72,11 @@
           </ScrollView>
         </StackLayout>
 
-        <StackLayout  BackgroundColor="White"  Grid.Row="2" Grid.Column="0" Padding="0,30,0,0">
+        <StackLayout  BackgroundColor="White"  Grid.Row="2" Grid.Column="0" Margin="0,30,0,0">
           <!-- Anatomi -->
           <StackLayout x:Name="box_anatomi" IsVisible="false">
                     <StackLayout Orientation="Horizontal">
-                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Hjem"  VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Naturvidenskab" VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
@@ -105,7 +105,7 @@
           <!-- Fysiologi -->
           <StackLayout x:Name="box_fysiologi" IsVisible="false">
             <StackLayout Orientation="Horizontal">
-                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Hjem"  VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Naturvidenskab" VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
@@ -113,9 +113,9 @@
                     </StackLayout>
             <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
-                <StackLayout Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
+                            <StackLayout Spacing="10" Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
 
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                                <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
                     <Button.Image>
                       <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_fys1.png"></OnPlatform>
                     </Button.Image>
@@ -134,7 +134,7 @@
           <!-- Psykologi -->
           <StackLayout x:Name="box_psykologi" IsVisible="false">
             <StackLayout Orientation="Horizontal">
-                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Hjem"  VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource Humanistiskvidenskab}" FontSize="30" Margin="0" Text="Humanistisk videnskab" VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
@@ -142,9 +142,9 @@
                     </StackLayout>
             <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
-                <StackLayout Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
+                            <StackLayout Spacing="10" Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
 
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                                <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
                     <Button.Image>
                       <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_psy1.png"></OnPlatform>
                     </Button.Image>
@@ -162,7 +162,7 @@
           <!-- Pædagogik -->
           <StackLayout x:Name="box_pædagogik" IsVisible="false">
             <StackLayout Orientation="Horizontal">
-                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Hjem"  VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource Humanistiskvidenskab}" FontSize="30" Margin="0" Text="Humanistisk videnskab" VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
@@ -170,9 +170,9 @@
                     </StackLayout>
             <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
-                <StackLayout Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
+                            <StackLayout Spacing="10" Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
 
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                                <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
                     <Button.Image>
                       <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_pad1.png"></OnPlatform>
                     </Button.Image>
@@ -190,7 +190,7 @@
           <!-- Ergoterapi -->
           <StackLayout x:Name="box_ergoterapi" IsVisible="false">
             <StackLayout Orientation="Horizontal">
-                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Hjem"  VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource Sundhedsvidenskab}" FontSize="30" Margin="0" Text="Naturvidenskab" VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
@@ -198,9 +198,9 @@
                     </StackLayout>
             <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
-                <StackLayout Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
+                            <StackLayout Spacing="10" Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
 
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                                <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
                     <Button.Image>
                       <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_3.png"></OnPlatform>
                     </Button.Image>
@@ -218,7 +218,7 @@
           <!-- Sygdomslære -->
           <StackLayout x:Name="box_sygdomslære" IsVisible="false">
             <StackLayout Orientation="Horizontal">
-                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Hjem"  VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource Sundhedsvidenskab}" FontSize="30" Margin="0" Text="Naturvidenskab" VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
@@ -226,9 +226,9 @@
                     </StackLayout>
             <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
-                <StackLayout Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
+                            <StackLayout Spacing="10" Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
 
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                                <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
                     <Button.Image>
                       <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_3.png"></OnPlatform>
                     </Button.Image>

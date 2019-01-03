@@ -46,5 +46,12 @@ namespace occupaTab.Views
             var mineNoter = new ItemsPage();
             await Navigation.PushAsync(mineNoter);
         }
+
+        private async void Clicked_btn_Quiz(object sender, EventArgs e)
+        {
+
+            var quiz = new Quiz();
+            await Navigation.PushAsync(quiz);
+        }
     }
 }

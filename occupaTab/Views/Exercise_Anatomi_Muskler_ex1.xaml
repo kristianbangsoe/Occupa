@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="occupaTab.Views.Exercise_Anatomi_Muskler_ex1">
+             x:Class="occupaTab.Views.Exercise_Anatomi_Muskler_ex1"
+             Title="Øvelser / Anatomi / Muskler / Øvelse 1: Kend dine knogler">
     <ContentPage.Resources>
         <ResourceDictionary>
             <!--Page Level Resources: Compatibile with Xamarin Live Player -->
@@ -19,7 +20,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <ScrollView>
+        <ScrollView MinimumHeightRequest="800">
         <StackLayout Margin="0,0,0,0" BackgroundColor="{StaticResource Accent}">
             <Grid Margin="0" x:Name="alayout_container2" VerticalOptions="CenterAndExpand" BackgroundColor="{StaticResource Accent}">
                 <Grid.RowDefinitions>
@@ -32,7 +33,7 @@
                 </Grid.ColumnDefinitions>
                 <StackLayout Margin="0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="{StaticResource Accent}">
                     <StackLayout Orientation="Horizontal" Margin="0,30,0,30">
-                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Hjem"  VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Naturvidenskab" VerticalOptions="Start" HorizontalOptions="Start" />
                         <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
@@ -72,7 +73,7 @@ Mauris interdum mauris sed fringilla fringilla.
                             </StackLayout>
                             <StackLayout Grid.Row="0" Grid.Column="1" HorizontalOptions="FillAndExpand"  BackgroundColor="White">
                                 <StackLayout Margin="30" HorizontalOptions="Start" Orientation="Horizontal">
-                                    <Button Margin="5" WidthRequest="100" StyleClass="" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White"  Image="icons/Quiz.png">
+                                        <Button Clicked="Clicked_btn_Quiz" Margin="5" WidthRequest="100" StyleClass="" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White"  Image="icons/Quiz.png">
                                         <Button.Image>
                                             <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/Quiz.png" Android="icons/Quiz.png"></OnPlatform>
                                         </Button.Image>
@@ -113,9 +114,6 @@ Sed dictum, orci eu rutrum finibus, dolor enim commodo felis.
                                         </Label.Text>
                                     </Label>
 
-                                    <StackLayout Grid.ColumnSpan="2" Grid.Row="4" HorizontalOptions="End" Margin="0,0,0,0">
-                                            <Button Clicked="Clicked_btn_Mine_Noter"  HeightRequest="50" WidthRequest="200" BackgroundColor="{StaticResource ButtonBackground}" TextColor="{StaticResource ButtonText}" FontSize="16" FontAttributes="Bold" Text="Rediger Note" />
-                                    </StackLayout>
                                 </StackLayout>
                             </StackLayout>
                         </Grid>

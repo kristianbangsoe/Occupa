@@ -53,7 +53,7 @@
             </StackLayout>
             <StackLayout Margin="0" BackgroundColor="White" Grid.Row="2" Grid.Column="0">
                 <StackLayout Orientation="Horizontal">
-                    <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Dashboard"  VerticalOptions="Start" HorizontalOptions="Start" />
+                    <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Hjem"  VerticalOptions="Start" HorizontalOptions="Start" />
                     <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
                     <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Naturvidenskab" VerticalOptions="Start" HorizontalOptions="Start" />
                     <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />

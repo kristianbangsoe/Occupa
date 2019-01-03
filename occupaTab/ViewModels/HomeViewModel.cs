@@ -9,7 +9,7 @@ namespace occupaTab.ViewModels
     {
         public HomeViewModel()
         {
-            Title = "Home";
+            Title = "Hjem";
 
             OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://xamarin.com/platform")));
         }

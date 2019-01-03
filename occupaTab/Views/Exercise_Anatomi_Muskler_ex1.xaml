@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="occupaTab.Views.Exercise_Anatomi_Muskler_ex1">
@@ -56,7 +56,7 @@
                             </Grid.ColumnDefinitions>
 
                             <StackLayout Grid.Row="0" Grid.Column="0" Margin="0" HorizontalOptions="FillAndExpand" BackgroundColor="White" Grid.RowSpan="2">
-                                <Image Margin="25" Source="icons/video_thumb.png" />
+                                <Image Margin="25" Source="video_thumb.png" />
                                 <Label  Margin="25,0,25,0" FontSize="30" TextColor="{StaticResource LightTextColor}">Beskrivelse:</Label>
                                 <Label  Margin="25,0,25,0" TextColor="{StaticResource LightTextColor}" BackgroundColor="White" HorizontalOptions="FillAndExpand">
                                     <Label.Text>
@@ -74,22 +74,22 @@ Mauris interdum mauris sed fringilla fringilla.
                                 <StackLayout Margin="30" HorizontalOptions="Start" Orientation="Horizontal">
                                     <Button Margin="5" WidthRequest="100" StyleClass="" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White"  Image="icons/Quiz.png">
                                         <Button.Image>
-                                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/Quiz.png" Android="icons/Quiz.png"></OnPlatform>
+                                            <OnPlatform x:TypeArguments="FileImageSource" iOS="Quiz.png" Android="icons/Quiz.png"></OnPlatform>
                                         </Button.Image>
                                     </Button>
                                     <Button Clicked="Clicked_btn_Anatomi_Muskler_Ask_Question" Margin="5" WidthRequest="100" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" Image="icons/AskQuestion.png">
                                         <Button.Image>
-                                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/AskQuestion.png" Android="icons/AskQuestion.png"></OnPlatform>
+                                            <OnPlatform x:TypeArguments="FileImageSource" iOS="AskQuestion.png" Android="icons/AskQuestion.png"></OnPlatform>
                                         </Button.Image>
                                     </Button>
                                         <Button Clicked="Clicked_btn_Anatomi_Muskler_Add_as_Favorite" x:Name="addToFavorite" Margin="5" WidthRequest="100" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" Image="icons/Favorite.png">
                                         <Button.Image>
-                                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/Favorite.png" Android="icons/Favorite.png"></OnPlatform>
+                                            <OnPlatform x:TypeArguments="FileImageSource" iOS="Favorite.png" Android="icons/Favorite.png"></OnPlatform>
                                         </Button.Image>
                                     </Button>
                                     <Button Clicked="Clicked_btn_Mine_Noter" Margin="5" WidthRequest="100" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" Image="icons/Notes.png">
                                         <Button.Image>
-                                            <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/Notes.png" Android="icons/Notes.png"></OnPlatform>
+                                            <OnPlatform x:TypeArguments="FileImageSource" iOS="Notes.png" Android="icons/Notes.png"></OnPlatform>
                                         </Button.Image>
                                     </Button>
                                 </StackLayout>

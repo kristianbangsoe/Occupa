@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="occupaTab.Views.Exercise_Anatomi_Muskler_ex2"
-             Title="Øvelser / Anatomi / Muskler / Øvelse 2: Kend dine knogler">
+             x:Class="occupaTab.Views.Exercise_Anatomi_Skelettet_ex1"
+             Title="Øvelser / Anatomi / Skelettet / Øvelse 1: Kend dine knogler">
     <ContentPage.Resources>
         <ResourceDictionary>
             <!--Page Level Resources: Compatibile with Xamarin Live Player -->
@@ -39,9 +39,9 @@
                             <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
                             <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Anatomi" VerticalOptions="Start" HorizontalOptions="Start" />
                             <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
-                            <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Muskler" VerticalOptions="Start" HorizontalOptions="Start" />
+                            <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Skelettet" VerticalOptions="Start" HorizontalOptions="Start" />
                             <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
-                            <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Øvelse 2: Kend dine knogler" VerticalOptions="Start" HorizontalOptions="Start" />
+                            <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Øvelse 1: Kend dine knogler" VerticalOptions="Start" HorizontalOptions="Start" />
                         </StackLayout>
 
                         <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"   BackgroundColor="{StaticResource Accent}" Orientation="Horizontal" HorizontalOptions="Center">

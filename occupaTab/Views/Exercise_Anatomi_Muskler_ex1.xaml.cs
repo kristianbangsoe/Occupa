@@ -49,7 +49,7 @@ namespace occupaTab.Views
         private async void Clicked_btn_Quiz(object sender, EventArgs e)
         {
 
-            var quiz = new Quiz();
+            var quiz = new Quiz_Anatomi_Muskler_ex1();
             await Navigation.PushAsync(quiz);
         }
     }

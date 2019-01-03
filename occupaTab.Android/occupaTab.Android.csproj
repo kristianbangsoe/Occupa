@@ -64,7 +64,6 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
-    <AndroidResource Include="Resources\drawable\LaunchScreen.storyboard" />
     <AndroidResource Include="Resources\drawable\AskQuestionSent.png" />
     <AndroidResource Include="Resources\drawable\BackgroundVectorColor.png" />
     <AndroidResource Include="Resources\drawable\BackgroundVectorBW.png" />

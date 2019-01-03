@@ -34,8 +34,8 @@
                     <StackLayout Margin="0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="1" BackgroundColor="{StaticResource Accent}" HorizontalOptions="Center" VerticalOptions="Center">
                         <StackLayout Orientation="Horizontal" Margin="0" HeightRequest="100" BackgroundColor="White" HorizontalOptions="StartAndExpand" VerticalOptions="Center">
                             <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Søg"  VerticalOptions="Center" HorizontalOptions="Start" />
-                            <Entry TextColor="{StaticResource LightTextColor}" BackgroundColor="{StaticResource Accent}" WidthRequest="400" FontSize="20" Margin="30,0,0,0" Text="Søg efter øvelser"  VerticalOptions="Center" HorizontalOptions="Start" />
-                            <Button  HorizontalOptions="End" VerticalOptions="Center" Margin="0,0,30,0" StyleClass="" Text="Søg"  BackgroundColor="{StaticResource Primary}"  TextColor="White" ContentLayout="Left, 0" />
+                            <Entry TextColor="{StaticResource LightTextColor}" BackgroundColor="{StaticResource Accent}" WidthRequest="400" FontSize="20" Margin="30,0,0,0" Placeholder="Søg efter øvelser" VerticalOptions="Center" HorizontalOptions="Start" />
+                            <Button WidthRequest="100" HorizontalOptions="End" VerticalOptions="Center" Margin="0,0,30,0" StyleClass="" Text="Søg"  BackgroundColor="{StaticResource Primary}"  TextColor="White" ContentLayout="Left, 0" />
                         </StackLayout>
                     </StackLayout>
             </Grid>

@@ -3,8 +3,6 @@
     <TabbedPage.Children>
        <!--HOME--> 
         <NavigationPage Title="Hjem">
-            <NavigationPage.BarBackgroundColor>
-                </NavigationPage.BarBackgroundColor>
                  
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
@@ -27,14 +25,14 @@
             </x:Arguments>
         </NavigationPage>
         <!--SEARCH-->
-        <NavigationPage Title="Find øvelser">
+        <NavigationPage Title="Søg">
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="search.png" />
                 </OnPlatform>
             </NavigationPage.Icon>
             <x:Arguments>
-                <views:HomePage />
+                <views:Search />
             </x:Arguments>
         </NavigationPage>
         <!--USER PROFILE-->

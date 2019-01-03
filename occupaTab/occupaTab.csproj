@@ -25,6 +25,9 @@
       <DependentUpon>Views\MainPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\Quiz_Anatomi_Muskler_ex1.xaml.cs">
+      <DependentUpon>Quiz_Anatomi_Muskler_ex1.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Views\AskQuestion.xaml">
@@ -42,7 +45,16 @@
     <EmbeddedResource Update="Views\Exercise_Anatomi_Skelettet.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Quiz.xaml">
+    <EmbeddedResource Update="Views\Exercise_Anatomi_Skelettet_ex1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Quiz_Anatomi_Muskler_ex1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Quiz_Anatomi_Muskler_ex2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Search.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

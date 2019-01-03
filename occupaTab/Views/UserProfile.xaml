@@ -3,16 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="occupaTab.Views.UserProfile"
-    Title="{Binding Title}">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Tilføj note" Clicked="AddItem_Clicked">
-            <ToolbarItem.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="iOS" Value="note.png" />
-                </OnPlatform>
-            </ToolbarItem.Icon>
-        </ToolbarItem>
-    </ContentPage.ToolbarItems>
+    Title="Profil">
     <ContentPage.Resources>
         <ResourceDictionary>
             <!--Page Level Resources: Compatibile with Xamarin Live Player -->
@@ -24,48 +15,125 @@
             <Color x:Key="Samfundsvidenskab">#42A5F5</Color>
             <Color x:Key="Humanistiskvidenskab">#7E57C2</Color>
             <Color x:Key="LightTextColor">#999999</Color>
+            <Color x:Key="MediumTextColor">#707070</Color>
+            <Color x:Key="LinkTextColor">#0000FF</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
     
-    <StackLayout Margin="0" BackgroundColor="{StaticResource Accent}">
-        <FlexLayout Direction="Row" JustifyContent="SpaceAround" Padding="0,30,0,30" BackgroundColor="White" >
-            <StackLayout Margin="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="White">
-                <Label Margin="30,30,30,0" VerticalOptions="CenterAndExpand" TextColor="{StaticResource LightTextColor}" FontSize="30" Text="Min profil"/>
-                <FlexLayout Margin="30,0,30,0" WidthRequest="1000">       
+    <ScrollView>
+    <StackLayout BackgroundColor="{StaticResource Accent}" >
+        <Label Margin="140,30,30,30" HorizontalOptions="Fill" TextColor="{StaticResource LightTextColor}" FontSize="30" Text="Min profil"/>
+        
+        <FlexLayout Padding="15" HorizontalOptions="FillAndExpand" JustifyContent="SpaceEvenly" >
+            <StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="White">
+                <FlexLayout WidthRequest="800">
                     <!--LEFT SIDE-->
-                    <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" Padding="10">
-                        <Button WidthRequest="300">
-                            <Button.Image >
-                                <OnPlatform x:TypeArguments="FileImageSource" iOS="profile.png" Android="profile.png"></OnPlatform>
+                    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Padding="10">
+                        <Button Margin="0,50,0,0" WidthRequest="475" BackgroundColor="White">
+                            <Button.Image> 
+                                <OnPlatform x:TypeArguments="FileImageSource" iOS="profile1.png" Android="profile.png" ></OnPlatform>
                             </Button.Image>  
                         </Button>
                         <Label  Margin="0,10,10,10" HorizontalOptions="CenterAndExpand" TextColor="{StaticResource LightTextColor}" FontSize="15" Text="louicm45@edu.ucl.dk"/>    
                     </StackLayout>
-                                    
+                    
                     <!--RIGHT SIDE-->
-                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Padding="30" BackgroundColor="White" >
-                        <Label  Margin="0,5,0,5" TextColor="{StaticResource LightTextColor}" FontSize="30" Text="Statistik"/>
-                        <FlexLayout JustifyContent="SpaceEvenly" VerticalOptions="Center">
-                            <FlexLayout Direction="Column" Wrap="Wrap">
-                                <Label  Margin="0" HorizontalOptions="FillAndExpand" TextColor="{StaticResource Naturvidenskab}" FontSize="30" Text="Anatomi"/>    
-                                <Label  Margin="0" HorizontalOptions="FillAndExpand" TextColor="{StaticResource Naturvidenskab}" FontSize="30" Text="1/3"/>    
-                            </FlexLayout>
+                    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" BackgroundColor="White" >
+                        <Label  Margin="0,30,0,30" TextColor="{StaticResource MediumTextColor}" FontSize="40" Text="Louise Camembert"/>
+                        <Label  Margin="0,0,0,15" TextColor="{StaticResource LightTextColor}" FontSize="20" Text="Statistik"/>
+                        
+                        <FlexLayout JustifyContent="SpaceAround" Padding="15">
+                            <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" WidthRequest="125">
+                                <StackLayout>
+                                    <Label  Margin="0" HorizontalOptions="CenterAndExpand" TextColor="{StaticResource MediumTextColor}" FontSize="20" Text="Anatomi"/>    
+                                    <Label  Margin="0" HorizontalOptions="CenterAndExpand" TextColor="{StaticResource Naturvidenskab}" FontSize="50" Text="1/3"/>    
+                                </StackLayout>
+                            </Frame>    
                             
-                            <FlexLayout Direction="Column" Wrap="Wrap">
-                                <Label  Margin="0" HorizontalOptions="FillAndExpand" TextColor="{StaticResource Naturvidenskab}" FontSize="30" Text="Ergoterapi"/>    
-                                <Label  Margin="0" HorizontalOptions="FillAndExpand" TextColor="{StaticResource Naturvidenskab}" FontSize="30" Text="2/3"/>    
-                            </FlexLayout>
-                            
-                            <FlexLayout Direction="Column" Wrap="Wrap">
-                                <Label  Margin="0" HorizontalOptions="FillAndExpand" TextColor="{StaticResource Naturvidenskab}" FontSize="30" Text="Psykologi"/>    
-                                <Label  Margin="0" HorizontalOptions="FillAndExpand" TextColor="{StaticResource Naturvidenskab}" FontSize="30" Text="0/"/>    
-                            </FlexLayout>
+                            <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" WidthRequest="125">
+                                <StackLayout>
+                                    <Label  Margin="0" HorizontalOptions="CenterAndExpand" TextColor="{StaticResource MediumTextColor}" FontSize="20" Text="Ergoterapi"/>    
+                                    <Label  Margin="0" HorizontalOptions="CenterAndExpand" TextColor="{StaticResource Sundhedsvidenskab}" FontSize="50" Text="2/3"/>    
+                                </StackLayout>
+                            </Frame> 
+                                
+                            <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" WidthRequest="125">
+                                <StackLayout>
+                                    <Label  Margin="0" HorizontalOptions="CenterAndExpand" TextColor="{StaticResource MediumTextColor}" FontSize="20" Text="Psykologi"/>    
+                                    <Label  Margin="0" HorizontalOptions="CenterAndExpand" TextColor="{StaticResource Samfundsvidenskab}" FontSize="50" Text="0/3"/>    
+                                </StackLayout>
+                            </Frame> 
                         </FlexLayout>
                     </StackLayout>
                     <!--END RIGHT SIDE-->
-                    
                 </FlexLayout>
             </StackLayout>
         </FlexLayout>
+        
+        <!--SETTINGS-->
+        <FlexLayout Padding="15" HorizontalOptions="FillAndExpand" JustifyContent="SpaceEvenly" >
+            <StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="White">
+                <FlexLayout Direction="Column" WidthRequest="800">
+                    
+                    <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
+                        <Label HorizontalOptions="Start" TextColor="{StaticResource LightTextColor}" FontSize="25" FontAttributes="Bold" Text="Indstillinger"/>
+                    </Frame>
+                        
+                    <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
+                        <StackLayout Orientation="Horizontal">     
+                            <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource LightTextColor}" FontSize="20" Text="Email til viderestilling"/>
+                            <Label VerticalOptions="CenterAndExpand" TextColor="{StaticResource LightTextColor}" FontSize="15" Text="louise.camembert@gmail.com"/>
+                        </StackLayout>
+                    </Frame>    
+                                
+                    <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
+                        <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource LightTextColor}" FontSize="20" Text="Skift adgangskode"/>
+                    </Frame>
+                        
+                    <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
+                        <StackLayout Orientation="Horizontal">     
+                            <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource LightTextColor}" FontSize="20" Text="Tofaktorgodkendelse"/>
+                            <Switch IsToggled="false" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand"></Switch>
+                        </StackLayout>
+                    </Frame> 
+                        
+                    <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
+                        <StackLayout Orientation="Horizontal">     
+                            <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource LightTextColor}" FontSize="20" Text="Anonymitet"/>
+                            <Switch IsToggled="true" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand"></Switch>
+                        </StackLayout>
+                    </Frame> 
+                       
+                </FlexLayout>
+            </StackLayout>
+        </FlexLayout>
+        <!--END SETTINGS-->
+            
+        <!--RESET & LOGOUT-->
+        <FlexLayout Padding="15" HorizontalOptions="FillAndExpand" JustifyContent="SpaceEvenly" >
+            <StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="White">
+                <FlexLayout Direction="Column" WidthRequest="800">
+                    
+                    <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
+                        <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource LightTextColor}" FontSize="20" Text="Nulstil"/>
+                    </Frame>
+                        
+                    <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
+                        <Button Clicked="HandleLogout"
+                                HorizontalOptions="Start"
+                                BackgroundColor="Transparent"
+                                HeightRequest="25"
+                                TextColor="{StaticResource LinkTextColor}" 
+                                FontSize="20" 
+                                Text="Logud"/>
+                    </Frame>
+                       
+                </FlexLayout>
+            </StackLayout>
+        </FlexLayout>
+        <!--END RESET & LOGOUT-->
+        
+        
     </StackLayout>
+    </ScrollView>
 </ContentPage>

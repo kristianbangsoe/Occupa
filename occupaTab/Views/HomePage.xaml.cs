@@ -14,7 +14,7 @@ namespace occupaTab.Views
         }
 
 
-        private void clicked_anatomi(object sender, EventArgs e)
+        private void Clicked_anatomi(object sender, EventArgs e)
         {
             box_anatomi.IsVisible = true;
             box_fysiologi.IsVisible = false;
@@ -25,7 +25,7 @@ namespace occupaTab.Views
 
         }
 
-        private void clicked_fysiologi(object sender, EventArgs e)
+        private void Clicked_fysiologi(object sender, EventArgs e)
         {
             box_anatomi.IsVisible = false;
             box_fysiologi.IsVisible = true;
@@ -36,7 +36,7 @@ namespace occupaTab.Views
 
         }
 
-        private void clicked_psykologi(object sender, EventArgs e)
+        private void Clicked_psykologi(object sender, EventArgs e)
         {
             box_anatomi.IsVisible = false;
             box_fysiologi.IsVisible = false;
@@ -47,7 +47,7 @@ namespace occupaTab.Views
 
         }
 
-        private void clicked_pædagogik(object sender, EventArgs e)
+        private void Clicked_pædagogik(object sender, EventArgs e)
         {
             box_anatomi.IsVisible = false;
             box_fysiologi.IsVisible = false;
@@ -58,7 +58,7 @@ namespace occupaTab.Views
 
         }
 
-        private void clicked_ergoterapi(object sender, EventArgs e)
+        private void Clicked_ergoterapi(object sender, EventArgs e)
         {
             box_anatomi.IsVisible = false;
             box_fysiologi.IsVisible = false;
@@ -69,7 +69,7 @@ namespace occupaTab.Views
 
         }
 
-        private void clicked_sygdomslære(object sender, EventArgs e)
+        private void Clicked_sygdomslære(object sender, EventArgs e)
         {
             box_anatomi.IsVisible = false;
             box_fysiologi.IsVisible = false;
@@ -80,13 +80,13 @@ namespace occupaTab.Views
 
         }
 
-        private async void clicked_btn_anatomi_muskler(object sender, EventArgs e)
+        private async void Clicked_btn_anatomi_muskler(object sender, EventArgs e)
         {
             var MainPage = new Exercise_Anatomi_Muskler();
             await Navigation.PushAsync(MainPage);
         }
 
-        private async void clicked_btn_anatomi_skelettet(object sender, EventArgs e)
+        private async void Clicked_btn_anatomi_skelettet(object sender, EventArgs e)
         {
             var MainPage = new Exercise_Anatomi_Skelettet();
             await Navigation.PushAsync(MainPage);

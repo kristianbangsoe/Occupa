@@ -38,7 +38,6 @@ namespace occupaTab.Views
                 state = true;
                 addToFavorite.Image = "Favorite_empty.png";
             }
-            // DisplayAlert("Tilføj til favoritter", "Tilføj til favoritter?", "Ok");
         }
 
         private async void Clicked_btn_Mine_Noter(object sender, EventArgs e)
@@ -50,7 +49,7 @@ namespace occupaTab.Views
         private async void Clicked_btn_Quiz(object sender, EventArgs e)
         {
 
-            var quiz = new Quiz();
+            var quiz = new Quiz_Anatomi_Muskler_ex1();
             await Navigation.PushAsync(quiz);
         }
     }

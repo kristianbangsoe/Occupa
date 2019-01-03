@@ -173,6 +173,7 @@
     <BundleResource Include="Resources\BackgroundVectorBW.png" />
     <BundleResource Include="Resources\red_heart.png" />
     <BundleResource Include="Resources\arrow_right.png" />
+    <BundleResource Include="Resources\profile1.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

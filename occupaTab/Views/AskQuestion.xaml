@@ -8,6 +8,7 @@
             <!--Page Level Resources: Compatibile with Xamarin Live Player -->
             <Color x:Key="Primary">#26A69A</Color>
             <Color x:Key="Accent">#F7F7F7</Color>
+            
             <Color x:Key="Border">#EDEDED</Color>
             <Color x:Key="Sundhedsvidenskab">#66BB6A</Color>
             <Color x:Key="Naturvidenskab">#FF7043</Color>
@@ -20,60 +21,69 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <ScrollView>
-        <StackLayout Margin="0,0,0,0" BackgroundColor="{StaticResource Accent}">
-            <Grid Margin="0" x:Name="alayout_container2" VerticalOptions="CenterAndExpand" BackgroundColor="{StaticResource Accent}">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                    
-                <StackLayout Margin="0" Grid.Row="0" Grid.Column="0"  BackgroundColor="{StaticResource Accent}">
-                    <StackLayout Orientation="Horizontal" Margin="0,30,0,30">
-                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Anatomi"  VerticalOptions="Start" HorizontalOptions="Start" />
-                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
-                        <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Øvelse 1: Kend dine knogler" VerticalOptions="Start" HorizontalOptions="Start" />
-                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
-                        <Label TextColor="{StaticResource Naturvidenskab}" FontSize="30" Margin="0" Text="Stil spørgsmål" VerticalOptions="Start" HorizontalOptions="Start" />
-                    </StackLayout>
-
-                    <StackLayout Grid.Row="1" Grid.Column="1" BackgroundColor="{StaticResource Accent}" Orientation="Horizontal" HorizontalOptions="Center">
-                        <Grid Margin="0" x:Name="alayout_container3" VerticalOptions="CenterAndExpand" RowSpacing="0" ColumnSpacing="0" BackgroundColor="{StaticResource Accent}">
+        <Grid>
+            <Image Aspect="AspectFill" x:Name="BGImageLogin" Source="BackgroundVectorColor.png" />
+            <ScrollView>      
+                <StackLayout  VerticalOptions="FillAndExpand">
+                        
+                    <StackLayout x:Name="AskQuestionModal" IsVisible="True" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <Grid Margin="0" x:Name="alayout_container3" VerticalOptions="FillAndExpand" RowSpacing="0" ColumnSpacing="0">
+                            
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="Auto" />
-                                <RowDefinition Height="50" />
+                                <RowDefinition Height="Auto" />
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="80*" />
-                                <ColumnDefinition Width="*" />    
+                                <ColumnDefinition Width="80*" />  
+                            </Grid.ColumnDefinitions>
+                               
+                            <StackLayout WidthRequest="800" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                                
+                                <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="1" BackgroundColor="White">
+                                    <Label  Margin="15,15,0,0" FontSize="20" TextColor="{StaticResource LightTextColor}">Spørgsmål til </Label>
+                                    <Label  Margin="0,15,0,15" FontSize="20" FontAttributes="Bold" TextColor="{StaticResource ButtonText}" >Øvelse X</Label>
+                                </StackLayout> 
+                                
+                                <!--ENTRY FIELD-->
+                                <StackLayout Grid.Row="1" Grid.Column="0" >
+                                    <Entry x:Name="EntryEmail" Text="" HeightRequest="360" Placeholder="Skriv dit spørgsmål her" HorizontalTextAlignment="Center" />    
+                                </StackLayout> 
+                                
+                            </StackLayout>
+                            
+                            <!--BUTTONS-->
+                            <StackLayout Orientation="Horizontal" Grid.Column="0" Grid.Row="2" VerticalOptions="CenterAndExpand" Margin="0,30,0,0">
+                                <Button Clicked="HandleCancel" HorizontalOptions="StartAndExpand" HeightRequest="50" WidthRequest="200" BackgroundColor="White" TextColor="{StaticResource ButtonText}" FontSize="22" FontAttributes="Bold" Text="Fortryd" />
+                                <Button Clicked="HandleSendQuestion" HorizontalOptions="End" HeightRequest="50" WidthRequest="200" BackgroundColor="White" TextColor="{StaticResource Primary}" FontSize="22" FontAttributes="Bold" Text="Send" />
+                            </StackLayout>
+                            
+                        </Grid>
+                    </StackLayout> 
+                            
+                    <StackLayout x:Name="AskQuestionSentModal" IsVisible="False" Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                        <Grid Margin="0" x:Name="alayout_container4" RowSpacing="0" ColumnSpacing="0">
+                            
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />    
                             </Grid.ColumnDefinitions>
                             
-                            <StackLayout Grid.Row="0" Grid.Column="0">
-                                <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="1" BackgroundColor="White">
-                                    <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Spørgsmål om"  VerticalOptions="Start" HorizontalOptions="Start" />
-                                    <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="Øvelse 3" VerticalOptions="Start" HorizontalOptions="Start" />
-                                    
-                                </StackLayout> 
-                                    
-                                <StackLayout Grid.Row="1" Grid.Column="1" BackgroundColor="White">
-                                    <Entry x:Name="EntryEmail" Text="" HeightRequest="300" Placeholder="Skriv dit spørgsmål her" HorizontalTextAlignment="Center" />    
-                                </StackLayout> 
-                                 
-                                <StackLayout Orientation="Horizontal" Grid.Row="2" Grid.Column="1"  HorizontalOptions="Center" Margin="0,30,0,0">
-                                    <Button Clicked="HandleCancel" HeightRequest="50" WidthRequest="200" BackgroundColor="White" TextColor="{StaticResource ButtonText}" FontSize="22" FontAttributes="Bold" Text="Fotryd" />
-                                    <Button Clicked="HandleSendQuestion" HeightRequest="50" WidthRequest="200" BackgroundColor="White" TextColor="{StaticResource Primary}" FontSize="22" FontAttributes="Bold" Text="Send" />
-                                </StackLayout>
+                            <StackLayout Margin="0" WidthRequest="600">
+                                <Button Clicked="HandleCloseModal" >
+                                    <Button.Image >
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="AskQuestionSent.png" Android="AskQuestionSent.png"></OnPlatform>
+                                    </Button.Image>  
+                                </Button>
                             </StackLayout>
+                            
                         </Grid>
-                    </StackLayout>  
+                    </StackLayout>
                 </StackLayout>
-            </Grid>
-        </StackLayout>
-        </ScrollView>
+            </ScrollView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>    
     

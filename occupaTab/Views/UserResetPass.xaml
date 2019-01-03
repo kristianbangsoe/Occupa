@@ -10,24 +10,27 @@
                 <Color x:Key="ButtonText">#707070</Color>
                 <Color x:Key="ButtonBackground">#FFFFFF</Color>
                 <Color x:Key="Title">#000000</Color>
+                <Color x:Key="Title2">#FFFFFF</Color>
                 <Color x:Key="GreyBackground">#E0E0E0</Color>
             </ResourceDictionary>
         </ContentPage.Resources>
-    
-        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="{StaticResource GreyBackground}">
+        
+    <Grid>
+        <Image Aspect="AspectFill" x:Name="BGImageLogin" Source="BackgroundVectorColor.png" />
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                 <FlexLayout JustifyContent="SpaceAround">
                     <StackLayout HorizontalOptions="StartAndExpand" WidthRequest="600">
                         <Label x:Name="NulstilAdgangskode" 
                                Margin="0,5,0,5"
                                FontSize="50" 
-                               TextColor="{StaticResource Title}"  
+                               TextColor="{StaticResource Title2}"  
                                Text="Tjek din email"/>
     
                         <Label x:Name="NulstilAdgangskodeTekst" 
                                Margin="0,5,0,5"
                                FontSize="18"
-                               TextColor="{StaticResource Title}"  
+                               TextColor="{StaticResource Title2}"  
                                Text="Vi har sendt dig en e-email med en midlertidig adgangskode som du kan bruge til at logge ind igen.&#10;&#10;Husk at ændre adgangskoden efter login.&#10;&#10;Du bliver viderestillet til login siden."/>
     
                         <StackLayout HorizontalOptions="Center" Margin="0,30,0,0">
@@ -42,4 +45,5 @@
                 </FlexLayout>   
             </StackLayout>
         </StackLayout>
-    </ContentPage>
+    </Grid>
+</ContentPage>

@@ -20,13 +20,20 @@ namespace occupaTab.Views
         public async void HandleCancel(object sender, EventArgs e)
         {
             var MainPage = new AskQuestion();
-            await Navigation.PushModalAsync(MainPage);
+            await Navigation.PopModalAsync();
         }
 
-        public async void HandleSendQuestion(object sender, EventArgs e)
+        public void HandleSendQuestion(object sender, EventArgs e)
+        {
+            AskQuestionModal.IsVisible = false;
+            AskQuestionSentModal.IsVisible = true;
+        }
+
+        public async void HandleCloseModal(object sender, EventArgs e)
         {
             var MainPage = new AskQuestion();
-            await Navigation.PushModalAsync(MainPage);
+            await Navigation.PopModalAsync();
         }
-	}
+
+    }
 }

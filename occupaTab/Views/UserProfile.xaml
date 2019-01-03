@@ -3,7 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="occupaTab.Views.UserProfile"
-    Title="{Binding Title}">
+    Title="Profil">
     <ContentPage.Resources>
         <ResourceDictionary>
             <!--Page Level Resources: Compatibile with Xamarin Live Player -->
@@ -21,8 +21,8 @@
     </ContentPage.Resources>
     
     <ScrollView>
-    <StackLayout BackgroundColor="{StaticResource Accent}">
-        <Label Margin="30" HorizontalOptions="FillAndExpand" TextColor="{StaticResource LightTextColor}" FontSize="30" Text="Min profil"/>
+    <StackLayout BackgroundColor="{StaticResource Accent}" >
+        <Label Margin="140,30,30,30" HorizontalOptions="Fill" TextColor="{StaticResource LightTextColor}" FontSize="30" Text="Min profil"/>
         
         <FlexLayout Padding="15" HorizontalOptions="FillAndExpand" JustifyContent="SpaceEvenly" >
             <StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="White">
@@ -74,20 +74,20 @@
         <FlexLayout Padding="15" HorizontalOptions="FillAndExpand" JustifyContent="SpaceEvenly" >
             <StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="White">
                 <FlexLayout Direction="Column" WidthRequest="800">
-                    <!--LEFT SIDE-->
+                    
                     <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
                         <Label HorizontalOptions="Start" TextColor="{StaticResource LightTextColor}" FontSize="25" FontAttributes="Bold" Text="Indstillinger"/>
                     </Frame>
                         
                     <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
                         <StackLayout Orientation="Horizontal">     
-                            <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource LinkTextColor}" FontSize="20" Text="Email til viderestilling"/>
-                            <Label  TextColor="{StaticResource LightTextColor}" FontSize="15" Text="louise.camembert@gmail.com"/>
+                            <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource LightTextColor}" FontSize="20" Text="Email til viderestilling"/>
+                            <Label VerticalOptions="CenterAndExpand" TextColor="{StaticResource LightTextColor}" FontSize="15" Text="louise.camembert@gmail.com"/>
                         </StackLayout>
                     </Frame>    
                                 
                     <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
-                        <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource LinkTextColor}" FontSize="20" Text="Skift adgangskode"/>
+                        <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource LightTextColor}" FontSize="20" Text="Skift adgangskode"/>
                     </Frame>
                         
                     <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
@@ -103,16 +103,35 @@
                             <Switch IsToggled="true" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand"></Switch>
                         </StackLayout>
                     </Frame> 
-                        
-                    
-                    
-                    <!--RIGHT SIDE-->
-                    
-                    <!--END RIGHT SIDE-->
+                       
                 </FlexLayout>
             </StackLayout>
         </FlexLayout>
         <!--END SETTINGS-->
+            
+        <!--RESET & LOGOUT-->
+        <FlexLayout Padding="15" HorizontalOptions="FillAndExpand" JustifyContent="SpaceEvenly" >
+            <StackLayout HorizontalOptions="CenterAndExpand" BackgroundColor="White">
+                <FlexLayout Direction="Column" WidthRequest="800">
+                    
+                    <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
+                        <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource LightTextColor}" FontSize="20" Text="Nulstil"/>
+                    </Frame>
+                        
+                    <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
+                        <Button Clicked="HandleLogout"
+                                HorizontalOptions="Start"
+                                BackgroundColor="Transparent"
+                                HeightRequest="25"
+                                TextColor="{StaticResource LinkTextColor}" 
+                                FontSize="20" 
+                                Text="Logud"/>
+                    </Frame>
+                       
+                </FlexLayout>
+            </StackLayout>
+        </FlexLayout>
+        <!--END RESET & LOGOUT-->
         
         
     </StackLayout>

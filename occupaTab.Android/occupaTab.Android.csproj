@@ -69,7 +69,6 @@
     <AndroidResource Include="Resources\drawable\BackgroundVectorBW.png" />
     <AndroidResource Include="Resources\drawable\red_heart.png" />
     <AndroidResource Include="Resources\drawable\arrow_right.png" />
-    <AndroidResource Include="Resources\drawable\splash_screen.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Tabbar.axml" />

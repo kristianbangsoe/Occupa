@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="occupaTab.Views.Quiz"
@@ -26,10 +26,6 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="20*" />
                         <RowDefinition Height="80*" />
-                        <RowDefinition Height="80*" />
-                        <RowDefinition Height="80*" />
-                        <RowDefinition Height="80*" />
-                        <RowDefinition Height="80*" />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
@@ -51,7 +47,7 @@
                         </StackLayout>
                     </StackLayout>
 
-                    <StackLayout x:Name="quiz1" IsVisible="True" Margin="15" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="{StaticResource Accent}">
+                    <StackLayout x:Name="sl_quiz1" IsVisible="True" Margin="15" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="{StaticResource Accent}">
                         <StackLayout Orientation="Horizontal" Margin="5" BackgroundColor="{StaticResource LightTextColor}">
                             <Label  Margin="15" Text="1. Hvad kaldes den store blodåre, der fører blodet fra hjertet og ud i kroppen?" TextColor="White" FontSize="25"/>
                         </StackLayout>
@@ -67,9 +63,13 @@
                         <Button Clicked="Quiz1_D" x:Name="btn_Quiz1_D" Margin="5" HorizontalOptions="FillAndExpand" StyleClass="" ContentLayout="Left, 0" BackgroundColor="White">
                             <Button.Text>D: Pulsåren</Button.Text>
                         </Button>
+
+                        <Button Clicked="Quiz1_videre" IsEnabled="False" x:Name="btn_Quiz1_videre" Margin="5" HorizontalOptions="EndAndExpand" StyleClass="" ContentLayout="Left, 0" BackgroundColor="White">
+                            <Button.Text>Videre</Button.Text>
+                        </Button>
                     </StackLayout>
 
-                    <StackLayout x:Name="quiz2" IsVisible="True" Margin="15" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="{StaticResource Accent}">
+                    <StackLayout x:Name="sl_quiz2" IsVisible="False" Margin="15" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="{StaticResource Accent}">
                         <StackLayout Orientation="Horizontal" Margin="5" BackgroundColor="{StaticResource LightTextColor}">
                             <Label  Margin="15" Text="2: Ved hvilken alder begynder et menneskefosters hjerte at slå?" TextColor="White" FontSize="25"/>
                         </StackLayout>
@@ -85,9 +85,13 @@
                         <Button Clicked="Quiz2_D" x:Name="btn_Quiz2_D" Margin="5" HorizontalOptions="FillAndExpand" StyleClass="" ContentLayout="Left, 0" BackgroundColor="White">
                             <Button.Text>D: Når ægget bliver befrugtet</Button.Text>
                         </Button>
+
+                        <Button Clicked="Quiz2_videre" IsEnabled="False" x:Name="btn_Quiz2_videre" Margin="5" HorizontalOptions="EndAndExpand" StyleClass="" ContentLayout="Left, 0" BackgroundColor="White">
+                            <Button.Text>Videre</Button.Text>
+                        </Button>
                     </StackLayout>
 
-                    <StackLayout x:Name="quiz3" IsVisible="True" Margin="15" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="{StaticResource Accent}">
+                    <StackLayout x:Name="sl_quiz3" IsVisible="False" Margin="15" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="{StaticResource Accent}">
                         <StackLayout Orientation="Horizontal" Margin="5" BackgroundColor="{StaticResource LightTextColor}">
                             <Label  Margin="15" Text="3: Hvor mange kamre har et menneskehjerte?" TextColor="White" FontSize="25"/>
                         </StackLayout>
@@ -103,6 +107,44 @@
                         <Button Clicked="Quiz3_D" x:Name="btn_Quiz3_D" Margin="5" HorizontalOptions="FillAndExpand" StyleClass="" ContentLayout="Left, 0" BackgroundColor="White">
                             <Button.Text>D: 5</Button.Text>
                         </Button>
+
+                        <Button Clicked="Quiz3_videre" IsEnabled="False" x:Name="btn_Quiz3_videre" Margin="5" HorizontalOptions="EndAndExpand" StyleClass="" ContentLayout="Left, 0" BackgroundColor="White">
+                            <Button.Text>Se Resultat</Button.Text>
+                        </Button>
+                    </StackLayout>
+
+                    <StackLayout x:Name="sl_quiz_result" IsVisible="False" Margin="15" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="{StaticResource Accent}">
+                        <StackLayout Orientation="Horizontal" Margin="5" BackgroundColor="{StaticResource LightTextColor}">
+                            <Label  Margin="15" Text="1. Hvad kaldes den store blodåre, der fører blodet fra hjertet og ud i kroppen?" TextColor="White" FontSize="25"/>
+
+                            <StackLayout Orientation="Horizontal" Margin="5" BackgroundColor="LightGreen">
+                                <Label  Margin="15" Text="B: Aorta" TextColor="White" FontSize="20"/>
+                            </StackLayout>
+                        </StackLayout>
+                        
+                        <StackLayout Orientation="Horizontal" Margin="5" BackgroundColor="{StaticResource LightTextColor}">
+                            <Label  Margin="15" Text="2: Ved hvilken alder begynder et menneskefosters hjerte at slå?" TextColor="White" FontSize="25"/>
+
+                            <StackLayout Orientation="Horizontal" Margin="5" BackgroundColor="LightGreen">
+                                <Label  Margin="15" Text="C: 3 dage" TextColor="White" FontSize="20"/>
+                            </StackLayout>
+                        </StackLayout>
+                        
+                        <StackLayout Orientation="Horizontal" Margin="5" BackgroundColor="{StaticResource LightTextColor}">
+                            <Label  Margin="15" Text="3: Hvor mange kamre har et menneskehjerte?" TextColor="White" FontSize="25"/>
+
+                            <StackLayout Orientation="Horizontal" Margin="5" BackgroundColor="LightGreen">
+                                <Label  Margin="15" Text="C: 4" TextColor="White" FontSize="20"/>
+                            </StackLayout>
+                        </StackLayout>
+
+
+                        <Button Clicked="Btn_afslut" Margin="5" HorizontalOptions="EndAndExpand" StyleClass="" ContentLayout="Left, 0" BackgroundColor="White">
+                            <Button.Text>Luk</Button.Text>
+                        </Button>
+
+
+
                     </StackLayout>
                 </Grid>
             </StackLayout>

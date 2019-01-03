@@ -171,6 +171,7 @@
     <BundleResource Include="Resources\AskQuestionSent.png" />
     <BundleResource Include="Resources\BackgroundVectorColor.png" />
     <BundleResource Include="Resources\BackgroundVectorBW.png" />
+    <BundleResource Include="Resources\profile1.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

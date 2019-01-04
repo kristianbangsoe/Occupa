@@ -37,7 +37,7 @@
         </Grid.ColumnDefinitions>
 
         <StackLayout Margin="0"  BackgroundColor="{StaticResource Accent}"  Grid.Row="1" Grid.Column="0">
-          <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,30,0,0" Text="Vælg fag"></Label>
+          <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,30,0,30" Text="Vælg fag"></Label>
           <ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal" >
             <StackLayout Orientation="Horizontal" Spacing="10" Margin="0" Padding="30,0,30,30">
                         

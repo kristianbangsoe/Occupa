@@ -17,6 +17,8 @@
             <Color x:Key="LightTextColor">#999999</Color>
             <Color x:Key="MediumTextColor">#707070</Color>
             <Color x:Key="LinkTextColor">#0000FF</Color>
+            <Color x:Key="WarningLinkTextColor">#FF3B30</Color>
+            ff3b30
         </ResourceDictionary>
     </ContentPage.Resources>
     
@@ -115,15 +117,11 @@
                 <FlexLayout Direction="Column" WidthRequest="800">
                     
                     <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
-                        <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource LightTextColor}" FontSize="20" Text="Nulstil"/>
-                    </Frame>
-                        
-                    <Frame HasShadow="false" CornerRadius="5" BorderColor="{StaticResource Border}" Padding="20" VerticalOptions="Center">
                         <Button Clicked="HandleLogout"
                                 HorizontalOptions="Start"
                                 BackgroundColor="Transparent"
                                 HeightRequest="25"
-                                TextColor="{StaticResource LinkTextColor}" 
+                                TextColor="{StaticResource WarningLinkTextColor}" 
                                 FontSize="20" 
                                 Text="Logud"/>
                     </Frame>

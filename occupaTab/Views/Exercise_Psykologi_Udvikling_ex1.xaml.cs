@@ -44,11 +44,11 @@ namespace occupaTab.Views
             await Navigation.PushAsync(mineNoter);
         }
 
-        private void Clicked_btn_Quiz(object sender, EventArgs e)
+        private async void Clicked_btn_Quiz(object sender, EventArgs e)
         {
 
-            //           var quiz = new Quiz_Anatomi_Skelettet_ex2();
-            //            await Navigation.PushAsync(quiz);
+                       var quiz = new Quiz_Anatomi_Muskler_ex1();
+                        await Navigation.PushAsync(quiz);
         }
     }
 }

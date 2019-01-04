@@ -103,7 +103,19 @@ namespace occupaTab.Views
             var MainPage = new Exercise_Fysiologi_Forplantning();
             await Navigation.PushAsync(MainPage);
         }
-        
+
+        private async void Clicked_btn_psykologi_udvikling(object sender, EventArgs e)
+        {
+            var MainPage = new Exercise_Psykologi_Udvikling();
+            await Navigation.PushAsync(MainPage);
+        }
+
+        private async void Clicked_btn_psykologi_kognitiv(object sender, EventArgs e)
+        {
+            var MainPage = new Exercise_Psykologi_Kognitiv();
+            await Navigation.PushAsync(MainPage);
+        }
+
         private async void Fav_clicked(object sender, EventArgs e)
         {
             var MainPage = new FavoritePage();

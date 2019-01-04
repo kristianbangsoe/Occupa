@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="occupaTab.Views.Exercise_Psykologi_Udvikling_ex1"
+             Title="Øvelser / Psykologi / Udvikling / Øvelse 1: Kend dine knogler">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!--Page Level Resources: Compatibile with Xamarin Live Player -->
+            <Color x:Key="Primary">#26A69A</Color>
+            <Color x:Key="Accent">#F7F7F7</Color>
+            <Color x:Key="Border">#EDEDED</Color>
+            <Color x:Key="Sundhedsvidenskab">#66BB6A</Color>
+            <Color x:Key="Naturvidenskab">#FF7043</Color>
+            <Color x:Key="Samfundsvidenskab">#42A5F5</Color>
+            <Color x:Key="Humanistiskvidenskab">#7E57C2</Color>
+            <Color x:Key="LightTextColor">#999999</Color>
+
+            <Color x:Key="ButtonText">#707070</Color>
+            <Color x:Key="ButtonBackground">#FFFFFF</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView MinimumHeightRequest="800">
+            <StackLayout Margin="0,0,0,0" BackgroundColor="{StaticResource Accent}">
+                <Grid Margin="0" x:Name="alayout_container2" VerticalOptions="CenterAndExpand" BackgroundColor="{StaticResource Accent}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50*" />
+                        <RowDefinition Height="50*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Margin="0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="{StaticResource Accent}">
+                        <StackLayout Orientation="Horizontal" Margin="0,30,0,30">
+                            <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="30,0,0,0" Text="Hjem"  VerticalOptions="Start" HorizontalOptions="Start" />
+                            <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                            <Label TextColor="{StaticResource Humanistiskvidenskab}" FontSize="30" Margin="0" Text="Humanistisk videnskab" VerticalOptions="Start" HorizontalOptions="Start" />
+                            <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                            <Label TextColor="{StaticResource Humanistiskvidenskab}" FontSize="30" Margin="0" Text="Psykologi" VerticalOptions="Start" HorizontalOptions="Start" />
+                            <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                            <Label TextColor="{StaticResource Humanistiskvidenskab}" FontSize="30" Margin="0" Text="Udvikling" VerticalOptions="Start" HorizontalOptions="Start" />
+                            <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0" Text="/" VerticalOptions="Start" HorizontalOptions="Start" />
+                            <Label TextColor="{StaticResource Humanistiskvidenskab}" FontSize="30" Margin="0" Text="Øvelse 1: Kend dine knogler" VerticalOptions="Start" HorizontalOptions="Start" />
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"   BackgroundColor="{StaticResource Accent}" Orientation="Horizontal" HorizontalOptions="Center">
+                            <Grid Margin="0" x:Name="alayout_container3" VerticalOptions="CenterAndExpand" RowSpacing="25" ColumnSpacing="25" BackgroundColor="{StaticResource Accent}">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <StackLayout Grid.Row="0" Grid.Column="0" Margin="0" HorizontalOptions="FillAndExpand" BackgroundColor="White" Grid.RowSpan="2">
+                                    <Image Margin="25" Source="video_thumb.png" />
+                                    <Label  Margin="25,0,25,0" FontSize="30" TextColor="{StaticResource LightTextColor}">Beskrivelse:</Label>
+                                    <Label  Margin="25,0,25,0" TextColor="{StaticResource LightTextColor}" BackgroundColor="White" HorizontalOptions="FillAndExpand">
+                                        <Label.Text>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Praesent ut magna venenatis erat 
+Nunc bibendum est et lorem fringilla, a sagittis massa tincidunt.
+Sed non aliquam purus.
+Sed dictum, orci eu rutrum finibus, dolor enim commodo felis.
+malesuada imperdiet efficitur ac lorem.
+Mauris interdum mauris sed fringilla fringilla.
+                                        </Label.Text>
+                                    </Label>
+                                </StackLayout>
+                                <StackLayout Grid.Row="0" Grid.Column="1" HorizontalOptions="FillAndExpand"  BackgroundColor="White">
+                                    <StackLayout Margin="30" HorizontalOptions="Start" Orientation="Horizontal">
+                                        <Button Clicked="Clicked_btn_Quiz" Margin="5" WidthRequest="100" StyleClass="" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White"  Image="icons/Quiz.png">
+                                            <Button.Image>
+                                                <OnPlatform x:TypeArguments="FileImageSource" iOS="Quiz.png" Android="icons/Quiz.png"></OnPlatform>
+                                            </Button.Image>
+                                        </Button>
+                                        <Button Clicked="Clicked_btn_Anatomi_Muskler_Ask_Question" Margin="5" WidthRequest="100" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" Image="icons/AskQuestion.png">
+                                            <Button.Image>
+                                                <OnPlatform x:TypeArguments="FileImageSource" iOS="AskQuestion.png" Android="icons/AskQuestion.png"></OnPlatform>
+                                            </Button.Image>
+                                        </Button>
+                                        <Button Clicked="Clicked_btn_Anatomi_Muskler_Add_as_Favorite" x:Name="addToFavorite" Margin="5" WidthRequest="100" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" Image="icons/Favorite.png">
+                                            <Button.Image>
+                                                <OnPlatform x:TypeArguments="FileImageSource" iOS="Favorite.png" Android="icons/Favorite.png"></OnPlatform>
+                                            </Button.Image>
+                                        </Button>
+                                        <Button Clicked="Clicked_btn_Mine_Noter" Margin="5" WidthRequest="100" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" Image="icons/Notes.png">
+                                            <Button.Image>
+                                                <OnPlatform x:TypeArguments="FileImageSource" iOS="Notes.png" Android="icons/Notes.png"></OnPlatform>
+                                            </Button.Image>
+                                        </Button>
+                                    </StackLayout>
+                                    <StackLayout Grid.Row="3" Grid.Column="1" Margin="30" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                                        <Label TextColor="{StaticResource LightTextColor}" FontSize="30" Margin="0,0,0,30" Text="Dine Noter" VerticalOptions="Center" HorizontalOptions="Start" />
+
+                                        <Label TextColor="{StaticResource LightTextColor}" BackgroundColor="White" HorizontalOptions="FillAndExpand">
+                                            <Label.Text>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Praesent ut magna venenatis erat 
+malesuada imperdiet efficitur ac lorem.
+Mauris interdum mauris sed fringilla fringilla.
+Mauris nec tempor ex.
+Cras at laoreet metus.
+Fusce in venenatis mi, tincidunt luctus felis.
+Vivamus ut neque eget urna maximus viverra sit amet vel felis.
+In interdum lacinia mi, ut lobortis justo tincidunt quis.
+Nunc bibendum est et lorem fringilla, a sagittis massa tincidunt.
+Sed non aliquam purus.
+Sed dictum, orci eu rutrum finibus, dolor enim commodo felis.
+                                            </Label.Text>
+                                        </Label>
+
+                                    </StackLayout>
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+
+                    </StackLayout>
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

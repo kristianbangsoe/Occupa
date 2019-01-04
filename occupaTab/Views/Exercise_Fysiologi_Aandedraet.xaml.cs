@@ -16,22 +16,21 @@ namespace occupaTab.Views
 		{
 			InitializeComponent ();
 		}
-        private async void Clicked_btn_anatomi_muskler(object sender, EventArgs e)
-        {
-            var Exercise_Anatomi_Muskler = new Exercise_Anatomi_Muskler();
-            await Navigation.PushAsync(Exercise_Anatomi_Muskler);
-        }
-
+      
         private async void Clicked_btn_Fysiologi_Åndedræt(object sender, EventArgs e)
         {
             var Exercise_Fysiologi_Åndedræt = new Exercise_Fysiologi_Aandedraet();
             await Navigation.PushAsync(Exercise_Fysiologi_Åndedræt);
         }
 
+        private async void Clicked_btn_Fysiologi_Forplantning(object sender, EventArgs e)
+        {
+            var Exercise_Fysiologi_Forplantning = new Exercise_Fysiologi_Forplantning();
+            await Navigation.PushAsync(Exercise_Fysiologi_Forplantning);
+        }
 
         private async void Clicked_btn_Fysiologi_Åndedræt_ex1(object sender, EventArgs e)
         {
-
             var Exercise_Fysiologi_Åndedræt_ex1 = new Exercise_Fysiologi_Aandedraet_ex1();
             await Navigation.PushAsync(Exercise_Fysiologi_Åndedræt_ex1);
 
@@ -40,12 +39,6 @@ namespace occupaTab.Views
         {
             var Exercise_Fysiologi_Åndedræt_ex2 = new Exercise_Fysiologi_Aandedraet_ex2();
             await Navigation.PushAsync(Exercise_Fysiologi_Åndedræt_ex2);
-
-        }
-
-        private void Clicked_btn_Fysiologi_Forplantning(object sender, EventArgs e)
-        {
-
-        }
+        }               
     }
 }

@@ -129,7 +129,7 @@
                       <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_fys1.png"></OnPlatform>
                     </Button.Image>
                   </Button>
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
+                  <Button Clicked="Clicked_btn_fysiologi_forplantning" StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
                     <Button.Image>
                       <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_4.png" Android="icons/icon_fys2.png"></OnPlatform>
                     </Button.Image>

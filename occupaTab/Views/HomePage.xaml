@@ -95,12 +95,12 @@
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                 <StackLayout Spacing="10" Orientation="Horizontal" Margin="0" Padding="30,20,30,30">
 
-                                <Button Clicked="Clicked_btn_anatomi_muskler" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_1.png">
+                                <Button Clicked="Clicked_btn_anatomi_muskler" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_ana1.png">
                                     <Button.Image>
                                         <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_ana1.png" Android="icons/icon_ana1.png"></OnPlatform>
                                     </Button.Image>
                                 </Button>
-                                <Button Clicked="Clicked_btn_anatomi_skelettet" StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand"  BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_2.png">
+                                <Button Clicked="Clicked_btn_anatomi_skelettet" StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand"  BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_ana2.png">
                                     <Button.Image>
                                         <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_ana2.png" Android="icons/icon_ana2.png"></OnPlatform>
                                     </Button.Image>
@@ -124,14 +124,14 @@
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                             <StackLayout Spacing="10" Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
 
-                                <Button Clicked="Clicked_btn_fysiologi_åndedræt" StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                                <Button Clicked="Clicked_btn_fysiologi_åndedræt" StyleClass="icon"  ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_fys1.png">
                     <Button.Image>
-                      <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_fys1.png"></OnPlatform>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_fys1.png" Android="icons/icon_fys1.png"></OnPlatform>
                     </Button.Image>
                   </Button>
-                  <Button Clicked="Clicked_btn_fysiologi_forplantning" StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
+                                <Button Clicked="Clicked_btn_fysiologi_forplantning" StyleClass="icon"  ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_fys2.png">
                     <Button.Image>
-                      <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_4.png" Android="icons/icon_fys2.png"></OnPlatform>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_fys2.png" Android="icons/icon_fys2.png"></OnPlatform>
                     </Button.Image>
                   </Button>
                 </StackLayout>
@@ -153,14 +153,14 @@
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                             <StackLayout Spacing="10" Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
 
-                                <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                                <Button StyleClass="icon"  ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_psy1.png">
                     <Button.Image>
-                      <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_psy1.png"></OnPlatform>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_psy1.png" Android="icons/icon_psy1.png"></OnPlatform>
                     </Button.Image>
                   </Button>
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
+                                <Button StyleClass="icon"  ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_psy2.png">
                     <Button.Image>
-                      <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_4.png" Android="icons/icon_psy2.png"></OnPlatform>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_psy2.png" Android="icons/icon_psy2.png"></OnPlatform>
                     </Button.Image>
                   </Button>
                 </StackLayout>
@@ -181,14 +181,14 @@
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                             <StackLayout Spacing="10" Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
 
-                                <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                                <Button StyleClass="icon"  ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_pad1.png">
                     <Button.Image>
-                      <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_pad1.png"></OnPlatform>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_pad1.png" Android="icons/icon_pad1.png"></OnPlatform>
                     </Button.Image>
                   </Button>
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
+                                <Button StyleClass="icon"  ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_pad2.png">
                     <Button.Image>
-                      <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_4.png" Android="icons/icon_pad2.png"></OnPlatform>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_pad2.png" Android="icons/icon_pad2.png"></OnPlatform>
                     </Button.Image>
                   </Button>
                 </StackLayout>
@@ -209,14 +209,14 @@
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                             <StackLayout Spacing="10" Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
 
-                                <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                                <Button StyleClass="icon"  ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_erg1.png">
                     <Button.Image>
-                      <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_3.png"></OnPlatform>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_erg1.png" Android="icons/icon_erg1.png"></OnPlatform>
                     </Button.Image>
                   </Button>
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
+                                <Button StyleClass="icon"  ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_erg2.png">
                     <Button.Image>
-                      <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_4.png" Android="icons/icon_4.png"></OnPlatform>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_erg2.png" Android="icons/icon_erg2.png"></OnPlatform>
                     </Button.Image>
                   </Button>
                 </StackLayout>
@@ -237,14 +237,14 @@
               <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                             <StackLayout Spacing="10" Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
 
-                                <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_3.png">
+                                <Button StyleClass="icon"  ContentLayout="Top,0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_syg1.png">
                     <Button.Image>
-                      <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_3.png" Android="icons/icon_3.png"></OnPlatform>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_syg1.png" Android="icons/icon_syg1.png"></OnPlatform>
                     </Button.Image>
                   </Button>
-                  <Button StyleClass="icon" WidthRequest="200" HeightRequest="200" ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_4.png">
+                                <Button StyleClass="icon"  ContentLayout="Top,-30" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_syg2.png">
                     <Button.Image>
-                      <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_4.png" Android="icons/icon_4.png"></OnPlatform>
+                                        <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_syg2.png" Android="icons/icon_syg2.png"></OnPlatform>
                     </Button.Image>
                   </Button>
                 </StackLayout>

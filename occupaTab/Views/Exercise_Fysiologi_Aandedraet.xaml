@@ -36,14 +36,14 @@
                     <FlexLayout JustifyContent="SpaceBetween" AlignContent="Start">
                         <StackLayout Spacing="10" Orientation="Horizontal" Margin="0" Padding="30,20,30,30"  >
 
-                            <Button Clicked="Clicked_btn_Fysiologi_Åndedræt" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Naturvidenskab}" CornerRadius="11" Image="icons/icon_1.png">
+                            <Button Clicked="Clicked_btn_Fysiologi_Åndedræt" StyleClass="icon" ContentLayout="Top, 0" HorizontalOptions="CenterAndExpand" BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Naturvidenskab}" CornerRadius="11" Image="icons/icon_fys1.png">
                                 <Button.Image>
-                                    <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_ana1.png" Android="icons/icon_fys1.png"></OnPlatform>
+                                    <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_fys1.png" Android="icons/icon_fys1.png"></OnPlatform>
                                 </Button.Image>
                             </Button>
-                            <Button Clicked="Clicked_btn_Fysiologi_Forplantning" StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand"  BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_2.png">
+                            <Button Clicked="Clicked_btn_Fysiologi_Forplantning" StyleClass="icon" ContentLayout="Top,0" HorizontalOptions="CenterAndExpand"  BackgroundColor="White" BorderWidth="1" BorderColor="{StaticResource Border}" CornerRadius="11" Image="icons/icon_fys2.png">
                                 <Button.Image>
-                                    <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_ana2.png" Android="icons/icon_fys2.png"></OnPlatform>
+                                    <OnPlatform x:TypeArguments="FileImageSource" iOS="icons/icon_fys2.png" Android="icons/icon_fys2.png"></OnPlatform>
                                 </Button.Image>
                             </Button>
                         </StackLayout>
